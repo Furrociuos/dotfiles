@@ -108,7 +108,8 @@ spawn-at-startup "swayosd-server"
 spawn-at-startup "~/AppImages/caprine.appimage"
 spawn-at-startup "/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1"
 spawn-at-startup "way-edges"
-spawn-at-startup "~/Scripts/Date.sh"
+spawn-at-startup "eww" "daemon" "--force-wayland"
+spawn-at-startup "eww" "open" "date-window"
 
 	
 // You can change the path where screenshots are saved.

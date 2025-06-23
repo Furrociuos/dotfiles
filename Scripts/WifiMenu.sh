@@ -274,6 +274,8 @@ function scan() {
     selected_wifi_index=$(
       printf "%s\n" "${wifi[@]}" |
         rofi -dmenu -mouse -i -p "SSID:" \
+          -theme-str 'window { width: 400px; height: 300px; }' \
+          -theme-str 'entry { width: 400px; }' \
           -format i
     )
 
@@ -306,7 +308,9 @@ function rofi_cmd() {
 
   local choice=$(
     echo -e "$options" |
-      rofi -dmenu -mouse -i -p "Wi-Fi Menu:"
+      rofi -dmenu -mouse -i -p "Wi-Fi Menu:" \
+        -theme-str 'window { width: 400px; height: 200px; }' \
+        -theme-str 'entry { width: 400px; }'
   )
 
   echo "$choice"
@@ -367,4 +371,3 @@ function main() {
 }
 
 main
-

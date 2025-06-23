@@ -1,0 +1,26 @@
+(defpoll date :interval "1s"
+  `date "+%B %d, %Y"`)
+
+(defpoll day :interval "1s"
+  'date "+%A"')
+
+(defwidget date-widget [] 
+      (box :orientation "vertical" :spacing 1 :class "date-box"
+      (label :text day :justify "center" :valign "center" :class "day-text")
+      (label :text date :justify "center" :valign "center" :class "date-text")
+    )
+)
+
+(defwindow date-window 
+  :monitor '["eDP-1", "HDMI-A-2"]'
+  :geometry (geometry :x "10%"
+                      :y "15%"
+                      :width "500px"
+                      :height "250px"
+                      :anchor "top left")
+  :stacking "bottom"
+  :windowtype "normal"
+  :wm-ignore true
+  :namespace "date&time"
+(date-widget)
+)
