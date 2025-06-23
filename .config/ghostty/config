@@ -44,3 +44,4 @@
 
 window-decoration = none
 theme = tokyonight_moon
+background-opacity = 0.8
