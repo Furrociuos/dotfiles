@@ -3,7 +3,7 @@
 
 include "/home/furrociuos/.gtkrc-2.0.mine"
 gtk-theme-name="Tokyonight-Dark-Moon"
-gtk-icon-theme-name="Colloid-Dark"
+gtk-icon-theme-name="Tela-blue-dark"
 gtk-font-name="Cascadia Code 10"
 gtk-cursor-theme-name="Bibata-Modern-Classic"
 gtk-cursor-theme-size=20
