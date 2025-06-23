@@ -17,7 +17,7 @@ element-text {
     fg3:    #7aa3f7;
 }
 
-@import "template/rounded-template.rasi"
+@import "~/.config/rofi/rounded.rasi"
 
 element selected {
     text-color: @bg1;

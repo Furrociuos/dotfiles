@@ -1,15 +1,9 @@
-/**
- *
- * Author : Aditya Shakya (adi1090x)
- * Github : @adi1090x
- * 
- * Rofi Theme File
- * Rofi Version: 1.7.3
- **/
-
 /*****----- Configuration -----*****/
 configuration {
     show-icons:                 false;
+    kb-row-up: "Up,Shift+Tab,Shift+ISO_Left_Tab,h";
+    kb-row-down: "Down,l";
+    kb-accept-entry: "Control+m,Return,KP_Enter,space";
 }
 
 /*****----- Global Properties -----*****/
@@ -20,8 +14,7 @@ configuration {
 window {
     /* properties for window widget */
     transparency:                "real";
-    location:                    center;
-    anchor:                      center;
+    location:                    northeast;
     fullscreen:                  false;
     width:                       605px;
     x-offset:                    0px;
@@ -32,7 +25,7 @@ window {
     margin:                      0px;
     padding:                     0px;
     border:                      0px solid;
-    border-radius:               4px;
+    border-radius:               0 0 0 24;
     border-color:                @selected;
     cursor:                      "default";
     background-color:            @background;
@@ -53,16 +46,7 @@ mainbox {
 
 /*****----- Inputbar -----*****/
 inputbar {
-    enabled:                     true;
-    spacing:                     10px;
-    margin:                      0px;
-    padding:                     0px;
-    border:                      0px;
-    border-radius:               0px;
-    border-color:                @selected;
-    background-color:            transparent;
-    text-color:                  @foreground;
-    children:                    [ "textbox-prompt-colon", dummy, "prompt"];
+    enabled:                     false;
 }
 
 dummy {
@@ -165,3 +149,5 @@ element selected.normal {
     background-color:            var(selected);
     text-color:                  var(background);
 }
+
+entry { enabled: false; }
