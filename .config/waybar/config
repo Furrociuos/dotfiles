@@ -1,0 +1,237 @@
+// -*- mode: jsonc -*-
+[{
+    "name": "top",
+    "layer": "top",
+    "position": "top",
+    "height": 45,
+    "spacing": 4,
+    "reload_style_on_change":true,
+
+    "modules-left": [
+    	"group/left"
+    ],
+    "modules-center": [
+      "group/center",
+    ],
+    "modules-right": [
+    	"group/right"
+    ],
+
+	"group/left": {
+		"orientation": "horizontal",
+		"modules": [
+      "mpris",
+    	"clock",
+      "custom/separator",
+      "niri/window",
+		]
+	},
+
+  "group/center": {
+    "orientation": "horizontal",
+    "modules": [
+      "niri/workspaces",
+    ]
+  },
+
+	"group/right": {
+		"orientation": "horizontal",
+		"modules": [
+      "group/tray",
+      "battery",
+     	"network",
+     	"bluetooth",
+     	"custom/notification"
+		]
+	},
+
+     "niri/workspaces": {
+         "disable-scroll": true,
+         "all-outputs": false,
+         "format": "{index}",
+         "format-icons": {
+            "default": "",
+        // NAMED WORKSPACES
+            "chat": "",
+            "game": "󱎓",
+             }
+    },
+
+    "niri/window": {
+      "format": "{title}",
+      "tooltip-format": "{app-id}", 
+      "max-length": 50,
+    },
+
+    "custom/separator": {
+       "format": "-", 
+       "tooltip": false
+      },
+
+    "custom/run": {
+      "format": "",
+      "tooltip": false,
+      "on-click": "pkill rofi || rofi -show drun"
+    },
+
+    "network": {
+        "format-wifi": "{essid} ({signalStrength}%) ",
+        "format-ethernet": "Wired ",
+        "tooltip-format": "{ifname} via {gwaddr} ",
+        "format-linked": "{ifname} (No IP) ",
+        "format-disconnected": "Offline ⚠",
+        "on-click": "iwgtk",
+        "interval": 30
+    },
+
+    "bluetooth": {
+    	"format-on": "On 󰂯",
+      "format-off": "Off 󰂲",
+    	"format-disabled": "Off 󰂲",
+    	"format-connected": "On 󰂱",
+    	"on-click": "blueberry"
+    },
+    
+    "group/audio": {
+        "orientation": "horizontal",
+        "drawer": {
+          "transition-duration": 500,
+		    	"children-class": "not-primary",
+		    	"transition-left-to-right": true,
+          "click-to-reveal": true
+          },
+        "modules": [
+          "pulseaudio",
+          "pulseaudio/slider"
+        ]
+      },
+
+    "pulseaudio": {
+        "format": "{format_source}",
+        "format-bluetooth": "{format_source}",
+        "format-bluetooth-muted": "{format_source}",
+        "format-muted": "{format_source}",
+        "format-source": "",
+        "format-source-muted": " ",
+        "format-icons": {
+            "headphone": "",
+            "hands-free": "",
+            "headset": "",
+            "phone": "",
+            "portable": "",
+            "car": "",
+            "default": ["", "", ""]
+        },
+    },
+
+    "clock": {
+            "format": " {:%I:%M %p}",
+            "tooltip-format": " {:%a, %d %b}"
+        },
+        
+    "battery": {
+        "states": {
+            "good": 95,
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "{capacity}% {icon}",
+//      "format-full": "",
+        "format-icons": ["", "", "", "", ""],
+        "interval": 30,
+        "tooltip-format": " {time} | 󱐋 {power} W |   {health}%"
+    },
+
+   "custom/notification": {
+        "tooltip": false,
+        "format": "{icon}",
+        "format-icons": {
+          "notification": "<span foreground='red'><sup></sup></span>",
+          "none": "",
+          "dnd-notification": "<span foreground='red'><sup></sup></span>",
+          "dnd-none": "",
+          "inhibited-notification": "<span foreground='red'><sup></sup></span>",
+          "inhibited-none": "",
+          "dnd-inhibited-notification": "<span foreground='red'><sup></sup></span>",
+          "dnd-inhibited-none": ""
+        },
+        "return-type": "json",
+        "exec-if": "which swaync-client",
+        "exec": "swaync-client -swb",
+        "on-click": "swaync-client -t -sw",
+        "on-click-right": "swaync-client -d -sw",
+        "escape": true
+      },
+
+    "custom/rofi": {
+    	"format":"󰣇",
+    	"tooltip": false,
+    	"on-click": "nwg-drawer -term ghostty -c 6 -fm thunar -ovl -closebtn left -pbpoweroff 'shutdown now' -pbreboot 'reboot' -pbexit 'hyprctl dispatch exit' -pblock 'hyprlock' -pbsleep 'systemctl suspend'",
+    },
+        
+    "group/tray": {
+    "orientation": "horizontal",
+		"drawer": {
+			"transition-duration": 500,
+			"children-class": "not-primary",
+			"transition-left-to-right": false,
+      "click-to-reveal": true
+		},
+		  "modules": [
+       "custom/arrow",
+       "tray"
+		 ]
+    },
+
+    "tray": {
+        "icon-size": 21,
+        "spacing": 10
+    },
+
+    "custom/arrow": {
+        "format": "",
+        "tooltip": false
+      },
+
+	"group/playerctl": {
+		"orientation": "horizontal",
+		"drawer": {
+			"transition-duration": 500,
+			"children-class": "not-primary",
+			"transition-left-to-right": true
+		},
+		"modules": [
+			"mpris",
+			"custom/prev",
+			"custom/next"
+		]
+	},
+
+  "mpris": {
+    "format": "{player_icon}",
+      "player-icons": {
+		    "default": "",
+		    "mpv": "",
+        "YoutubeMusic": "🎵"
+	  },
+  },
+
+	"custom/prev": {
+		"format": "󰒮",
+		"on-click": "playerctl previous",
+        "tooltip": false
+	},
+
+	"custom/play": {
+		"format": "󰐊",
+		"on-click": "playerctl play-pause",
+        "tooltip": false
+	},
+
+	"custom/next": {
+		"format": "󰒭",
+		"on-click": "playerctl next",
+        "tooltip": false
+	},
+}]
+

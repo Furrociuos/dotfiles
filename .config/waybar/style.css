@@ -1,0 +1,153 @@
+@import '/home/furrociuos/.cache/wal/colors-waybar.css';
+
+* {
+    border: none;
+    border-radius: 0;
+    font-family: CascadiaCode, SymbolsNerdFont, FontAwesome6Free;
+    font-size: 16px;
+    min-height: 0;
+}
+
+window#waybar {
+/*    background: #222436; */
+    background: rgba(26, 27, 38, 0.95);
+    color: rgb(255, 255, 255);
+}
+
+#window{
+    color: white;
+    padding-left: 3px;
+    padding-right: 3px;
+    margin: 3px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    border-radius: 15px;
+}
+
+tooltip {
+    background: rgba(34, 36, 54, 0.75);
+    padding-left: 6px;
+    padding-right: 6px;
+    margin: 4px;
+}
+
+tooltip label {
+  color: white;
+}
+
+#left, #right, #center {
+    background: #2A2C3D;
+    padding-left: 6px;
+    padding-right: 6px;
+    margin: 4px;
+    border-radius: 10px
+}
+
+#workspaces {
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+#workspaces button { 
+	padding: 4px;
+    margin: 1px;
+    color: white;
+    font-size: 20px;
+}
+
+#workspaces button.empty {
+	color: gray;
+}
+
+#workspaces button.active {
+	padding: 0px 10px 0px 10px;
+	margin: 6px;
+	border-radius: 15px;
+	background: #7aa3f7;
+	color: #22354C; 
+    font-style: normal;
+	transition: all 0.3s ease;
+ }
+
+#custom-power, #network, #tray, #custom-notification {
+	border-radius: 15px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    color: white
+}
+
+#pulseaudio {
+	padding-left: 15px;
+	}
+
+#network, #battery, #pulseaudio, #bluetooth {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+#custom-run {
+	padding: 0 10 0 10;
+}
+
+#clock {
+    font-weight: bold;
+    padding: 0 10 0 10
+}
+
+#tray {
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+#custom-notification {
+    padding-right: 15px;
+    padding-left: 10px;
+}
+
+#custom-media {
+	font-size: 16px;
+  padding-left: 5px
+}
+
+#custom-prev, #custom-play, #custom-next {
+	transition: all 0.3s ease;
+	font-size: 24px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+#custom-prev:hover, #custom-play:hover, #custom-next:hover {
+  color: gray
+}
+
+#mpris {
+  padding: 0 10 0 10;
+}
+
+#custom-separator {
+  padding: 0 5 0 5
+}
+
+#pulseaudio-slider {
+    min-height: 0px;
+    min-width: 150px;
+    opacity: 1;
+    box-shadow: none;
+}
+
+#pulseaudio-slider slider {
+  border: none;
+  border-radius: 20px;
+}
+
+#pulseaudio-slider trough {
+    min-height: 5px;
+    min-width: 10px;
+    border-radius: 5px;
+    background-color: @color0;
+}
+
+#pulseaudio-slider highlight {
+    border-radius: 5px;
+    background-color: @color1;
+}
