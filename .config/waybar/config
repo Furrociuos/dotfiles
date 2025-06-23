@@ -1,5 +1,5 @@
 // -*- mode: jsonc -*-
-[{
+{
     "name": "top",
     "layer": "top",
     "position": "top",
@@ -233,5 +233,5 @@
 		"on-click": "playerctl next",
         "tooltip": false
 	},
-}]
+}
 
