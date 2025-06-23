@@ -10,6 +10,6 @@ window {
 #box-inner {
         background-color: rgba (23, 53, 63, 0.0);
 	      padding: 10px;
-        font-size: 32px;
-        font-family: SuperMario256 
+        font-size: 100px;
+        font-family: SuperMario256
 }

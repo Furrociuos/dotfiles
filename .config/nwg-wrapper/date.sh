@@ -1,3 +1,3 @@
 #!/bin/bash
 
-date "+%A, %B %d"
+date "+%B %d, %Y"
