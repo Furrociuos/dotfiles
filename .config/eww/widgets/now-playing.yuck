@@ -1,29 +1,15 @@
+;; ~/.config/eww/eww.yuck
+
 (defpoll current_title :interval "1s" "playerctl metadata title")
 (defpoll current_artist :interval "1s" "playerctl metadata artist")
 (defpoll current_album :interval "1s" "playerctl metadata album")
-(defpoll current_art_url :interval "1s" "playerctl metadata arturl") ;; This poll is now directly used
 (defpoll current_status :interval "1s" "playerctl status")
-
-;; Define your fallback image path directly in Eww
-;; IMPORTANT: Replace this with the actual path to your fallback image!
-(defvar EWW_FALLBACK_IMAGE "${HOME}/.config/eww/placeholder.png")
 
 (defwidget now-playing []
   (box :class "now-playing-widget"
        :orientation "h"
        :space-evenly false
        :spacing 10
-    ;; Using an if-statement for the image path
-    (image :image-width 60
-           :image-height 60
-           :path (if (or (== "${current_art_url}" "")
-                          (== "${current_art_url}" "file://") ;; Handle empty/invalid arturl
-                          (== "${current_art_url}" "file://null")) ;; Sometimes null is returned
-                       EWW_FALLBACK_IMAGE
-                       (if (starts-with "${current_art_url}" "file://")
-                           (replace-regexp "file://" "" "${current_art_url}") ;; Remove file:// prefix
-                           "${current_art_url}"))
-           :class "album-art")
     (box :class "track-info"
          :orientation "v"
          :space-evenly false
@@ -45,13 +31,13 @@
 )
 
 (defwindow now-playing-window
-  :geometry (geometry :x "10%"
+  :geometry (geometry :x "10px"
                       :y "10px"
                       :width "300px"
                       :height "100px"
                       :anchor "bottom left")
   :stacking "bg"
-  :monitor '["eDP-1", "HDMI-A-2"]' 
+  :monitor 0
   :wm-ignore true
   (now-playing)
 )
