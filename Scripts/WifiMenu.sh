@@ -166,9 +166,7 @@ function connect_to_network() {
   # Stores password in a temp file
   # Pull Request, If you find any better way of doing this, thanks.
   (
-    rofi -dmenu -password -p "Enter password for $selected_ssid:" \
-      -theme-str 'window { width: 500px; height: 50px; }' \
-      -theme-str 'entry { width: 500px; }'
+    rofi -dmenu -password -p "Enter password for $selected_ssid:"
   ) >"$TEMP_PASSWORD_FILE"
 
   # Exit in case of any error
@@ -240,8 +238,6 @@ function wifi_status() {
   local selected_index=$(
     echo -e "$data" |
       rofi -dmenu -mouse -i -p "Network Info:" \
-        -theme-str 'window { width: 700px; height: 400px; }' \
-        -theme-str 'entry { width: 700px; }' \
         -format i
   )
 
@@ -274,8 +270,6 @@ function scan() {
     selected_wifi_index=$(
       printf "%s\n" "${wifi[@]}" |
         rofi -dmenu -mouse -i -p "SSID:" \
-          -theme-str 'window { width: 400px; height: 300px; }' \
-          -theme-str 'entry { width: 400px; }' \
           -format i
     )
 
@@ -308,9 +302,7 @@ function rofi_cmd() {
 
   local choice=$(
     echo -e "$options" |
-      rofi -dmenu -mouse -i -p "Wi-Fi Menu:" \
-        -theme-str 'window { width: 400px; height: 200px; }' \
-        -theme-str 'entry { width: 400px; }'
+      rofi -dmenu -mouse -i -p "Wi-Fi Menu:"
   )
 
   echo "$choice"
