@@ -12,7 +12,7 @@
 )
 
 (defwindow date-window 
-  :monitor '["eDP-1", "HDMI-A-2"]'
+  :monitor "eDP-1" 
   :geometry (geometry :x "10%"
                       :y "15%"
                       :width "500px"

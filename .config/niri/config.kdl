@@ -55,7 +55,8 @@ output "eDP-1" {
 	position x=0 y=0
 }
 
-output "HDMI-A-2" {
+output "Acer Technologies Acer K202HQLA T1KSS0144216" {
+  mode "1280x720@60" 
 	position x=1920 y=0
 }
 	
@@ -107,7 +108,6 @@ spawn-at-startup "udiskie"
 spawn-at-startup "swayosd-server"
 spawn-at-startup "~/AppImages/caprine.appimage"
 spawn-at-startup "/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1"
-spawn-at-startup "way-edges"
 spawn-at-startup "eww" "daemon" "--force-wayland"
 spawn-at-startup "eww" "open" "date-window"
 
@@ -169,7 +169,7 @@ animations {
 window-rule {
   match app-id="vesktop"
   match app-id="Caprine"
-    open-on-output "eDP-1"
+    open-on-output "HDMI-A-2"
 		open-maximized true
 }
 
@@ -186,18 +186,17 @@ window-rule {
 }
 
 window-rule {
+  match app-id="gamescope" title="Steam Big Picture Mode"
+    open-on-output "eDP-1"
+}
+
+window-rule {
     match app-id=r#"firefox$"# title="^Picture-in-Picture$"
     match app-id="qt-sudo"
     match app-id="resolve" title="resolve"
     match app-id="Ryujinx" title="ContentDialogOverlayWindow"
     exclude title="— Kdenlive^"
      open-floating true
-}
-
-window-rule {
-  match app-id="steam" title="Steam Big Picture Mode"
-    open-focused true
-    open-maximized true
 }
 
 window-rule {
@@ -255,6 +254,7 @@ binds {
 	  Alt+Space { spawn "sh" "-c" "pkill rofi || rofi -show drun"; }
     Super+Space {spawn "sh" "-c" "pkill rofi || rofi -show run"; }
 	  XF86Presentation { spawn "~/Scripts/BigPicture.sh"; }
+    Alt+XF86Presentation { spawn "remoteplaywhatever"; }
 	  Super+E { spawn "nautilus"; }
     Super+N { spawn "sh" "-c" "curd -rofi -image-preview"; }
     Super+Z { spawn "pulsecontrol"; }
@@ -419,6 +419,7 @@ cursor {
 
 debug {
   wait-for-frame-completion-in-pipewire
+  render-drm-device "/dev/dri/renderD128"
 }
 
 gestures {

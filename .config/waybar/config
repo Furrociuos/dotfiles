@@ -38,9 +38,10 @@
 		"orientation": "horizontal",
 		"modules": [
       "group/tray",
-      "battery",
+      "pulseaudio",
      	"network",
      	"bluetooth",
+      "battery",
      	"custom/notification"
 		]
 	},
@@ -92,27 +93,11 @@
     	"on-click": "blueberry"
     },
     
-    "group/audio": {
-        "orientation": "horizontal",
-        "drawer": {
-          "transition-duration": 500,
-		    	"children-class": "not-primary",
-		    	"transition-left-to-right": true,
-          "click-to-reveal": true
-          },
-        "modules": [
-          "pulseaudio",
-          "pulseaudio/slider"
-        ]
-      },
-
     "pulseaudio": {
-        "format": "{format_source}",
-        "format-bluetooth": "{format_source}",
-        "format-bluetooth-muted": "{format_source}",
-        "format-muted": "{format_source}",
-        "format-source": "",
-        "format-source-muted": " ",
+        "format": "{volume}% {icon}",
+        "format-bluetooth": "{volume)% {icon}󰂯",
+        "format-bluetooth-muted": "󰂯",
+        "format-muted": "",
         "format-icons": {
             "headphone": "",
             "hands-free": "",
