@@ -53,13 +53,13 @@ input {
 output "eDP-1" {
 	mode "1920x1080@165"
 	position x=0 y=0
+  focus-at-startup
 }
 
 output "Acer Technologies Acer K202HQLA T1KSS0144216" {
   mode "1280x720@60" 
 	position x=1920 y=0
 }
-	
 
 // Settings that influence how windows are positioned and sized.
 // Find more information on the wiki:
@@ -108,8 +108,7 @@ spawn-at-startup "udiskie"
 spawn-at-startup "swayosd-server"
 spawn-at-startup "~/AppImages/caprine.appimage"
 spawn-at-startup "/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1"
-spawn-at-startup "eww" "daemon" "--force-wayland"
-spawn-at-startup "eww" "open" "date-window"
+spawn-at-startup "~/Scripts/Eww.sh"
 
 	
 // You can change the path where screenshots are saved.
@@ -205,31 +204,18 @@ window-rule {
       open-focused false
 }
 
-// Example: block out two password managers from screen capture.
-// (This example rule is commented out with a "/-" in front.)
 window-rule {
     match app-id=r#"^org\.keepassxc\.KeePassXC$"#
     match app-id=r#"^org\.gnome\.World\.Secrets$"#
     match app-id="Proton Pass"
 
     block-out-from "screen-capture"
-
-    // Use this instead if you want them visible on third-party screenshot tools.
-    // block-out-from "screencast"
 }
 
-// Example: enable rounded corners for all windows.
-// (This example rule is commented out with a "/-" in front.)
 window-rule {
     geometry-corner-radius 12
     clip-to-geometry true
     draw-border-with-background false
-}
-
-window-rule {
-  match is-floating=true
-  exclude is-focused=true
-    baba-is-float true
 }
 
 binds {
@@ -359,7 +345,6 @@ binds {
     Mod+Period { expel-window-from-column; }
 
     Mod+R { switch-preset-column-width; }
-    Mod+Alt+R { switch-preset-window-height; }
     Mod+Ctrl+R { reset-window-height; }
     Mod+F { maximize-column; }
     Mod+Shift+F { fullscreen-window; }

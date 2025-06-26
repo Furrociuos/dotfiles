@@ -105,5 +105,10 @@ source $ZSH/oh-my-zsh.sh
 
 fastfetch
 
+alias gitsave='~/Scripts/gitSave.sh'
+alias niriedit='nvim ~/.config/niri/config.kdl'
+alias baredit='nvim ~/.config/waybar/config'
+alias barstyle='nvim ~/.config/waybar/style.css'
+
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
