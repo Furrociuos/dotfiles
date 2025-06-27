@@ -1,11 +1,9 @@
-// -*- mode: jsonc -*-
 {
     "name": "top",
     "layer": "top",
     "position": "top",
     "height": 45,
     "spacing": 4,
-    "reload_style_on_change":true,
 
     "modules-left": [
     	"group/left"
@@ -60,7 +58,6 @@
 
     "niri/window": {
       "format": "{title}",
-      "tooltip-format": "{app-id}", 
       "max-length": 50,
     },
 
@@ -68,12 +65,6 @@
        "format": "-", 
        "tooltip": false
       },
-
-    "custom/run": {
-      "format": "",
-      "tooltip": false,
-      "on-click": "pkill rofi || rofi -show drun"
-    },
 
     "network": {
         "format-wifi": "{essid} ({signalStrength}%) ",
@@ -121,7 +112,6 @@
             "critical": 15
         },
         "format": "{capacity}% {icon}",
-//      "format-full": "",
         "format-icons": ["", "", "", "", ""],
         "interval": 30,
         "tooltip-format": " {time} | 󱐋 {power} W |   {health}%"
@@ -148,12 +138,6 @@
         "escape": true
       },
 
-    "custom/rofi": {
-    	"format":"󰣇",
-    	"tooltip": false,
-    	"on-click": "nwg-drawer -term ghostty -c 6 -fm thunar -ovl -closebtn left -pbpoweroff 'shutdown now' -pbreboot 'reboot' -pbexit 'hyprctl dispatch exit' -pblock 'hyprlock' -pbsleep 'systemctl suspend'",
-    },
-        
     "group/tray": {
     "orientation": "horizontal",
 		"drawer": {
@@ -177,46 +161,4 @@
         "format": "",
         "tooltip": false
       },
-
-	"group/playerctl": {
-		"orientation": "horizontal",
-		"drawer": {
-			"transition-duration": 500,
-			"children-class": "not-primary",
-			"transition-left-to-right": true
-		},
-		"modules": [
-			"mpris",
-			"custom/prev",
-			"custom/next"
-		]
-	},
-
-  "mpris": {
-    "format": "{player_icon}",
-      "player-icons": {
-		    "default": "",
-		    "mpv": "",
-        "YoutubeMusic": "🎵"
-	  },
-  },
-
-	"custom/prev": {
-		"format": "󰒮",
-		"on-click": "playerctl previous",
-        "tooltip": false
-	},
-
-	"custom/play": {
-		"format": "󰐊",
-		"on-click": "playerctl play-pause",
-        "tooltip": false
-	},
-
-	"custom/next": {
-		"format": "󰒭",
-		"on-click": "playerctl next",
-        "tooltip": false
-	},
 }
-

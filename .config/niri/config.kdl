@@ -58,7 +58,7 @@ output "eDP-1" {
 
 output "Acer Technologies Acer K202HQLA T1KSS0144216" {
   mode "1280x720@60" 
-	position x=1920 y=0
+	position x=1920 y=330
 }
 
 // Settings that influence how windows are positioned and sized.
@@ -104,6 +104,10 @@ layout {
 
 // STARTUP
 
+spawn-at-startup "sh" "-c" "env ELECTRON_OZONE_PLATFORM_HINT=wayland vesktop --start-minimized"
+spawn-at-startup "sh" "-c" "fdm --hidden"
+spawn-at-startup "waypaper" "--restore"
+spawn-at-startup "waybar"
 spawn-at-startup "udiskie"
 spawn-at-startup "swayosd-server"
 spawn-at-startup "~/AppImages/caprine.appimage"
@@ -170,6 +174,7 @@ window-rule {
   match app-id="Caprine"
     open-on-output "HDMI-A-2"
 		open-maximized true
+    open-focused false
 }
 
 window-rule {
@@ -235,7 +240,7 @@ binds {
 
     // Suggested binds for running programs: terminal, app launcher, screen locker.
     Mod+Return { spawn "ghostty"; }
-    Super+Alt+L { spawn "~/.config/rofi/powermenu/type-1/powermenu.sh"; }
+    Super+P { spawn "~/.config/rofi/powermenu/type-1/powermenu.sh"; }
   	Super+B { spawn "brave" "-enable-features=TouchpadOverscrollHistoryNavigation"; }
 	  Alt+Space { spawn "sh" "-c" "pkill rofi || rofi -show drun"; }
     Super+Space {spawn "sh" "-c" "pkill rofi || rofi -show run"; }
@@ -372,7 +377,7 @@ binds {
 
     Mod+Shift+P { power-off-monitors; }
 
-  	Mod+Shift+R { spawn "systemctl" "--user" "restart" "waybar" ; }
+  	Mod+Shift+R { spawn "pkill" "-SIGUSR2" "waybar" ; }
 
     Mod+F1 { set-dynamic-cast-window; }
     Mod+F2 { set-dynamic-cast-monitor; }
@@ -404,7 +409,7 @@ cursor {
 
 debug {
   wait-for-frame-completion-in-pipewire
-  render-drm-device "/dev/dri/renderD128"
+  disable-cursor-plane
 }
 
 gestures {
@@ -414,7 +419,7 @@ gestures {
 }
 
 layer-rule {
-    match namespace="^wallpaper$"
+    match namespace="^swww-daemon$"
     place-within-backdrop true
 }
 
