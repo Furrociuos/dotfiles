@@ -107,7 +107,7 @@ layout {
 spawn-at-startup "sh" "-c" "env ELECTRON_OZONE_PLATFORM_HINT=wayland vesktop --start-minimized"
 spawn-at-startup "sh" "-c" "fdm --hidden"
 spawn-at-startup "waypaper" "--restore"
-spawn-at-startup "waybar"
+spawn-at-startup "ironbar"
 spawn-at-startup "udiskie"
 spawn-at-startup "swayosd-server"
 spawn-at-startup "~/AppImages/caprine.appimage"
@@ -418,8 +418,13 @@ gestures {
   }
 }
 
+overview {
+  zoom 0.65
+  backdrop-color "#222436"
+}
+
 layer-rule {
-    match namespace="^swww-daemon$"
+    match namespace="^overview-bar$"
     place-within-backdrop true
 }
 

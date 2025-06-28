@@ -48,12 +48,6 @@
          "disable-scroll": true,
          "all-outputs": false,
          "format": "{index}",
-         "format-icons": {
-            "default": "",
-        // NAMED WORKSPACES
-            "chat": "",
-            "game": "󱎓",
-             }
     },
 
     "niri/window": {
@@ -67,13 +61,13 @@
       },
 
     "network": {
-        "format-wifi": "{essid} ({signalStrength}%) ",
+        "format-wifi": "{signalStrength}% ",
         "format-ethernet": "Wired ",
-        "tooltip-format": "{ifname} via {gwaddr} ",
+        "tooltip-format": "{essid} via {gwaddr} ",
         "format-linked": "{ifname} (No IP) ",
         "format-disconnected": "Offline ⚠",
         "on-click": "iwgtk",
-        "interval": 30
+        "interval": 10
     },
 
     "bluetooth": {
@@ -113,7 +107,7 @@
         },
         "format": "{capacity}% {icon}",
         "format-icons": ["", "", "", "", ""],
-        "interval": 30,
+        "interval": 5,
         "tooltip-format": " {time} | 󱐋 {power} W |   {health}%"
     },
 
@@ -161,4 +155,14 @@
         "format": "",
         "tooltip": false
       },
+
+  "mpris": {
+    "format": "{player_icon}",
+      "player-icons": {
+		    "default": "",
+		    "mpv": "",
+        "YoutubeMusic": "🎵"
+	  },
+  },
 }
+

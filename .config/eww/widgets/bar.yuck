@@ -1,0 +1,30 @@
+(defpoll current_title :interval "1s" "playerctl metadata title")
+(defpoll current_artist :interval "1s" "playerctl metadata artist")
+
+(defwindow overview-bar-name
+  :monitor 0
+  :geometry (geometry :y "135px" :width "90%" :height "40px" :anchor "top center") ; Adjust as needed
+  :stacking "bg"
+  :exclusive false
+  :namespace "overview-bar"
+  (box :orientation "horizontal" :space-evenly false :class "overview-bar" 
+    (box :class "player" :halign "start" 
+     (box :class "now-playing-widget"
+       :orientation "horizontal"
+       :spacing 10
+       :space-evenly false
+    (box :class "playericon"
+         :spacing 10
+         :space-evenly false
+         (label :text "" :halign "start"))
+    (box :class "track-info"
+         :orientation "vertical"
+         :halign "start"
+         :valign "center"
+         :space-evenly false
+      (label :text "${current_title}" :class "title")
+      (label :text "${current_artist}" :class "artist-album" :halign "start") ) 
+         )
+        )
+  )
+)

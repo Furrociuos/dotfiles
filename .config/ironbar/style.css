@@ -1,0 +1,69 @@
+* {
+  font-family: CascadiaCode, SymbolsNerdFont, FontAwesome6Free;
+  font-size: 16px;
+  background-color: transparent
+}
+
+.background {
+  background-color: rgba(26, 27, 38, 0.95)
+}
+
+#bar #start, #bar #center, #bar #end {
+  background: #2A2C3D;
+  padding: 0 6 0 6;
+  margin: 4px;
+  border-radius: 10px
+}
+
+.popup {
+  border-style: solid;
+  border-width: 10px;
+  border-color: rgba(26, 27, 38, 0.95);
+  border-radius: 20px;
+  background-color: #2A2C3D;
+  padding: 15px
+}
+
+.workspaces {
+  padding: 0 5 0 5;
+}
+
+.workspaces .item {
+  padding: 4 8 4 8;
+  margin: 1px;
+  color: white;
+  font-size: 20px;
+}
+
+.workspaces .item.focused  {
+  padding: 0 20 0 20;
+  margin: 6px;
+  border-radius: 15px;
+  background-color: #7aa3f7;
+  color: #22354C;
+  transition: all 0.3s ease
+}
+
+.clock {
+  font-weight: bold;
+  padding: 0 10 0 10
+}
+
+.focused {
+  padding: 0 0 0 10
+}
+
+.popup-clock .calendar-clock {
+  padding: 15 25 15 25;
+  font-size: 24px;
+}
+
+.popup-clock .calendar {
+  font-size: 16px;
+  padding: 5px;
+}
+
+.tray, .network_manager, . {
+  padding: 0 10 0 10;
+}
+

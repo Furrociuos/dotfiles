@@ -1,9 +1,5 @@
 ;; ~/.config/eww/eww.yuck
 
-(defpoll current_title :interval "1s" "playerctl metadata title")
-(defpoll current_artist :interval "1s" "playerctl metadata artist")
-(defpoll current_album :interval "1s" "playerctl metadata album")
-(defpoll current_status :interval "1s" "playerctl status")
 
 (defwidget now-playing []
   (box :class "now-playing-widget"
