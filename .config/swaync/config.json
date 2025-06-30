@@ -1,4 +1,4 @@
-c{
+{
   "$schema": "/etc/xdg/swaync/configSchema.json",
   "positionX": "right",
   "positionY": "top",
@@ -53,8 +53,7 @@ c{
     "inhibitors",
     "title",
     "dnd",
-    "notifications",
-    "mpris"
+    "notifications"
   ],
   "widget-config": {
     "inhibitors": {
