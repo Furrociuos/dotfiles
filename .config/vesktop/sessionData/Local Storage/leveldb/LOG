@@ -1,0 +1,5 @@
+2025/06/30-20:05:43.718 c5b Creating DB /home/furrociuos/.config/vesktop/sessionData/Local Storage/leveldb since it was missing.
+2025/06/30-20:05:43.733 c5b Reusing MANIFEST /home/furrociuos/.config/vesktop/sessionData/Local Storage/leveldb/MANIFEST-000001
+2025/06/30-20:08:54.558 c5c Level-0 table #5: started
+2025/06/30-20:08:54.569 c5c Level-0 table #5: 53999 bytes OK
+2025/06/30-20:08:54.571 c5c Delete type=0 #3
