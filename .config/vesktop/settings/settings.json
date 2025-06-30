@@ -2,7 +2,9 @@
     "autoUpdate": true,
     "autoUpdateNotification": true,
     "useQuickCss": true,
-    "themeLinks": [],
+    "themeLinks": [
+        "https://raw.githubusercontent.com/Dyzean/Tokyo-Night/main/themes/tokyo-night.theme.css"
+    ],
     "eagerPatches": false,
     "enabledThemes": [],
     "enableReactDevtools": false,
@@ -67,7 +69,14 @@
             "enabled": false
         },
         "BetterFolders": {
-            "enabled": true
+            "enabled": true,
+            "sidebar": true,
+            "showFolderIcon": 1,
+            "keepIcons": false,
+            "closeAllHomeButton": false,
+            "closeAllFolders": false,
+            "forceOpen": false,
+            "sidebarAnim": true
         },
         "BetterGifAltText": {
             "enabled": false
@@ -82,7 +91,9 @@
             "enabled": true
         },
         "BetterRoleDot": {
-            "enabled": true
+            "enabled": true,
+            "bothStyles": false,
+            "copyRoleColorInProfilePopout": false
         },
         "BetterSessions": {
             "enabled": false
@@ -160,7 +171,13 @@
             "enabled": false
         },
         "FakeNitro": {
-            "enabled": true
+            "enabled": true,
+            "enableStickerBypass": true,
+            "enableStreamQualityBypass": true,
+            "enableEmojiBypass": true,
+            "transformEmojis": true,
+            "transformStickers": true,
+            "transformCompoundSentence": false
         },
         "FakeProfileThemes": {
             "enabled": false
@@ -319,7 +336,8 @@
             "enabled": false
         },
         "OpenInApp": {
-            "enabled": true
+            "enabled": true,
+            "spotify": true
         },
         "OverrideForumDefaults": {
             "enabled": false
@@ -346,7 +364,11 @@
             "enabled": false
         },
         "PlatformIndicators": {
-            "enabled": true
+            "enabled": true,
+            "colorMobileIndicator": true,
+            "list": true,
+            "badges": true,
+            "messages": true
         },
         "PreviewMessage": {
             "enabled": false
@@ -460,10 +482,16 @@
             "enabled": false
         },
         "TypingIndicator": {
-            "enabled": true
+            "enabled": true,
+            "includeMutedChannels": false,
+            "includeCurrentChannel": true,
+            "indicatorMode": 3
         },
         "TypingTweaks": {
-            "enabled": true
+            "enabled": true,
+            "alternativeFormatting": true,
+            "showRoleColors": true,
+            "showAvatars": true
         },
         "Unindent": {
             "enabled": false
@@ -478,7 +506,10 @@
             "enabled": false
         },
         "UserVoiceShow": {
-            "enabled": true
+            "enabled": true,
+            "showInUserProfileModal": true,
+            "showInMemberList": true,
+            "showInMessages": true
         },
         "USRBG": {
             "enabled": false
@@ -535,6 +566,21 @@
         },
         "SupportHelper": {
             "enabled": true
+        },
+        "WebRichPresence (arRPC)": {
+            "enabled": false
+        },
+        "WebKeybinds": {
+            "enabled": true
+        },
+        "WebScreenShareFixes": {
+            "enabled": true
+        },
+        "DisableDeepLinks": {
+            "enabled": true
+        },
+        "WebContextMenus": {
+            "enabled": true
         }
     },
     "notifications": {
@@ -547,6 +593,6 @@
         "authenticated": false,
         "url": "https://api.vencord.dev/",
         "settingsSync": false,
-        "settingsSyncVersion": 1749391271310
+        "settingsSyncVersion": 1751289237994
     }
 }
