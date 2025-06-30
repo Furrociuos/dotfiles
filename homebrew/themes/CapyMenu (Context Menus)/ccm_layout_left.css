@@ -1,0 +1,21 @@
+/* ---
+CapyMenu CM v2.0
+Layout - Left
+--- */
+
+/* Global container */
+.gamepadcontextmenu_BasicContextMenuContainer_2ZDB6 {
+    justify-content: left;
+}
+
+/* This should not affect sharp-edged layouts */
+.gamepadcontextmenu_contextMenuContents_sIgB-:first-child {
+    border-top-left-radius: 0; border-bottom-left-radius: 0;
+}
+
+/* Title */
+.gamepadcontextmenu_BasicContextMenuHeader_2Jp8B {
+    align-self: flex-start;
+    margin-bottom: 0;
+    border-top-left-radius: 0 !important; border-bottom-left-radius: 0 !important; /* force overwrite because injection order might cause issues */
+}

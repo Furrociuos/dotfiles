@@ -1,0 +1,3 @@
+:root {
+    --ccm-destructfocus-bg: linear-gradient(90deg, var(--ccm-destructfocus-bg-grad1), var(--ccm-destructfocus-bg-grad2), var(--ccm-destructfocus-bg-grad3));
+}

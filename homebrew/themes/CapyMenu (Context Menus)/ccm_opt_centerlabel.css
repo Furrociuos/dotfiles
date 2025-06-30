@@ -1,0 +1,13 @@
+.gamepadcontextmenu_contextMenuItem_1sdvo.contextMenuItem {
+    justify-content: center;
+    flex-wrap: wrap; /* Necessary for the following correction */
+}
+/* Nested items */
+.gamepadcontextmenu_contextMenuItem_1sdvo.gamepadcontextmenu_SubMenu_1_tPN .gamepadcontextmenu_Label_1WqSg {
+    display: flex;
+    justify-content: center;
+}
+/* Correction for descriptive items */
+.gamepadcontextmenu_contextMenuItem_1sdvo .dropdownlabel_DropDownLabelContainer_2wVxO {
+    flex-basis: 95%; /* 100% messes up the checkmark icon for the currently active option */
+}

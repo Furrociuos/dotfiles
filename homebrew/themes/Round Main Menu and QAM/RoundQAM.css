@@ -1,0 +1,9 @@
+/* Round QAM */
+.quickaccessmenu_Container_3DHXr {
+    border-radius: var(--custom-QAM-Radius) 0px 0px var(--custom-QAM-Radius) !important;
+}
+
+/* Round QAM animation */
+.quickaccessmenu_Menu_1gJzx {
+    border-radius: var(--custom-QAM-Radius) 0px 0px var(--custom-QAM-Radius) !important;
+}

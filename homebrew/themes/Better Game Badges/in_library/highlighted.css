@@ -1,0 +1,7 @@
+.BasicUI .gamecapsule_InLibrary_fyHna {
+  opacity: 0;
+}
+
+.BasicUI .gamecapsule_GameCapsule_fXdhj.Focusable:focus .gamecapsule_InLibrary_fyHna {
+  opacity: 1;
+}

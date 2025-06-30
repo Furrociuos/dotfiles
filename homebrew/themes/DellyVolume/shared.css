@@ -1,0 +1,29 @@
+.audio_VolumePopin_2iUUM {
+	background: transparent;
+	box-shadow: none;
+	transition-duration: .5s;
+	transition-timing-function: ease-in-out;
+	will-change: transform, opacity;
+	transition-property: transform, opacity;
+	opacity: 1;
+}
+
+.audio_VolumePopinHidden_1OwmL {
+	transform: translateY(-100%) scale(.85);
+	opacity: .2;
+}
+
+.audio_VolumePopin_2iUUM .gamepadslider_Icon_21uKi,
+.audio_VolumePopin_2iUUM .gamepaddialog_FieldIcon_1sC68{
+	display: none;
+}
+
+.audio_VolumePopin_2iUUM .gamepadslider_SliderTrack_Mq25N {
+	background: #2323238E;
+	height: 6px;
+	--left-track-color: #FFFFFFF0;
+}
+
+.audio_VolumePopin_2iUUM .gamepaddialog_WithBottomSeparatorStandard_3s1Rk::after {
+	content: unset;
+}

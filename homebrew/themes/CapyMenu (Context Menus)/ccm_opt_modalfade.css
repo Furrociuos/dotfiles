@@ -1,0 +1,12 @@
+@keyframes ccm_anim_bgfade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.gamepadui_GamepadDialogOverlay_34Euf .ModalOverlayBackground {
+    animation: ccm_anim_bgfade .4s ease 1 forwards;
+}

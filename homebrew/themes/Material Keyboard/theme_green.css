@@ -1,0 +1,9 @@
+.DefaultTheme {
+    --background-color: #00695c;
+    --key-spacebar-background-color: #72aca5;
+    --key-extendedkey-background-color: #72aca5;
+}
+
+.DefaultTheme .virtualkeyboard_KeyboardKey_2KhPX.virtualkeyboard_Touched_3UFQq {
+    background-color: #72aca5;
+}

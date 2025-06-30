@@ -1,0 +1,161 @@
+{
+  "name": "Library Move Extra Info",
+  "author": "Matthias, RasitAyaz",
+  "version": "v1.5",
+  "manifest_version": 5,
+  "inject": {
+    "shared.css": [
+      "SP"
+    ]
+  },
+  "patches": {
+    "Horizontal Align": {
+      "default": "Left when highlighted",
+      "type": "dropdown",
+      "values": {
+        "Left": {
+          "--library-extra-info-left": [
+            "5px",
+            "SP"
+          ],
+          "--library-extra-info-focus-left": [
+            "5px",
+            "SP"
+          ]
+        },
+        "Left when highlighted": {
+          "--library-extra-info-left": [
+            "0px",
+            "SP"
+          ],
+          "--library-extra-info-right": [
+            "0px",
+            "SP"
+          ],
+          "--library-extra-info-focus-left": [
+            "5px",
+            "SP"
+          ]
+        },
+        "Center": {
+          "--library-extra-info-left": [
+            "0px",
+            "SP"
+          ],
+          "--library-extra-info-right": [
+            "0px",
+            "SP"
+          ],
+          "--library-extra-info-focus-left": [
+            "0px",
+            "SP"
+          ],
+          "--library-extra-info-focus-right": [
+            "0px",
+            "SP"
+          ]
+        },
+        "Right": {
+          "--library-extra-info-right": [
+            "5px",
+            "SP"
+          ],
+          "--library-extra-info-focus-right": [
+            "5px",
+            "SP"
+          ]
+        }
+      }
+    },
+    "Vertical Align": {
+      "default": "Bottom edge",
+      "type": "dropdown",
+      "values": {
+        "Top edge": {
+          "--library-extra-info-top": [
+            "-10px",
+            "SP"
+          ]
+        },
+        "Top": {
+          "--library-extra-info-top": [
+            "5px",
+            "SP"
+          ]
+        },
+        "Bottom": {
+          "--library-extra-info-bottom": [
+            "5px",
+            "SP"
+          ]
+        },
+        "Bottom edge": {
+          "--library-extra-info-bottom": [
+            "-10px",
+            "SP"
+          ]
+        }
+      }
+    },
+    "Use Obsidian": {
+      "type": "checkbox",
+      "values": {
+        "No": {},
+        "Yes": {
+          "useobsidian.css": [
+            "SP"
+          ]
+        }
+      }
+    },
+    "Roundedness": {
+      "default": "10px",
+      "type": "slider",
+      "values": {
+        "0px": {
+          "--library-extra-info-radius-size": [
+            "0px",
+            "SP"
+          ]
+        },
+        "3px": {
+          "--library-extra-info-radius-size": [
+            "3px",
+            "SP"
+          ]
+        },
+        "5px": {
+          "--library-extra-info-radius-size": [
+            "5px",
+            "SP"
+          ]
+        },
+        "10px": {
+          "--library-extra-info-radius-size": [
+            "10px",
+            "SP"
+          ]
+        },
+        "15px": {
+          "--library-extra-info-radius-size": [
+            "15px",
+            "SP"
+          ]
+        },
+        "20px": {
+          "--library-extra-info-radius-size": [
+            "20px",
+            "SP"
+          ]
+        },
+        "30px": {
+          "--library-extra-info-radius-size": [
+            "30px",
+            "SP"
+          ]
+        }
+      }
+    }
+  },
+  "id": "bf56c658-200d-4afe-8f0e-8d2299f3d33e"
+}

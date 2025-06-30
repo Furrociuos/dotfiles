@@ -1,0 +1,158 @@
+{
+  "name": "Better Blur",
+  "author": "the_bukkit",
+  "version": "v1.1",
+  "manifest_version": 5,
+  "inject": {
+    "shared.css": [
+      "SP"
+    ]
+  },
+  "patches": {
+    "Blur Strength": {
+      "type": "slider",
+      "default": "4",
+      "values": {
+        "Off": {
+          "--betterBlur-strength": [
+            "0px",
+            "SP"
+          ]
+        },
+        "1": {
+          "--betterBlur-strength": [
+            "1px",
+            "SP"
+          ]
+        },
+        "2": {
+          "--betterBlur-strength": [
+            "2px",
+            "SP"
+          ]
+        },
+        "3": {
+          "--betterBlur-strength": [
+            "3px",
+            "SP"
+          ]
+        },
+        "4": {
+          "--betterBlur-strength": [
+            "4px",
+            "SP"
+          ]
+        },
+        "5": {
+          "--betterBlur-strength": [
+            "5px",
+            "SP"
+          ]
+        },
+        "6": {
+          "--betterBlur-strength": [
+            "6px",
+            "SP"
+          ]
+        },
+        "7": {
+          "--betterBlur-strength": [
+            "7px",
+            "SP"
+          ]
+        },
+        "8": {
+          "--betterBlur-strength": [
+            "8px",
+            "SP"
+          ]
+        },
+        "9": {
+          "--betterBlur-strength": [
+            "9px",
+            "SP"
+          ]
+        },
+        "10": {
+          "--betterBlur-strength": [
+            "10px",
+            "SP"
+          ]
+        }
+      }
+    },
+    "Opacity": {
+      "type": "slider",
+      "default": "0.5",
+      "values": {
+        "0.0": {
+          "--betterBlur-opacity": [
+            "0.0",
+            "SP"
+          ]
+        },
+        "0.1": {
+          "--betterBlur-opacity": [
+            "0.1",
+            "SP"
+          ]
+        },
+        "0.2": {
+          "--betterBlur-opacity": [
+            "0.2",
+            "SP"
+          ]
+        },
+        "0.3": {
+          "--betterBlur-opacity": [
+            "0.3",
+            "SP"
+          ]
+        },
+        "0.4": {
+          "--betterBlur-opacity": [
+            "0.4",
+            "SP"
+          ]
+        },
+        "0.5": {
+          "--betterBlur-opacity": [
+            "0.5",
+            "SP"
+          ]
+        },
+        "0.6": {
+          "--betterBlur-opacity": [
+            "0.6",
+            "SP"
+          ]
+        },
+        "0.7": {
+          "--betterBlur-opacity": [
+            "0.7",
+            "SP"
+          ]
+        },
+        "0.8": {
+          "--betterBlur-opacity": [
+            "0.8",
+            "SP"
+          ]
+        },
+        "0.9": {
+          "--betterBlur-opacity": [
+            "0.9",
+            "SP"
+          ]
+        },
+        "1.0": {
+          "--betterBlur-opacity": [
+            "1.0",
+            "SP"
+          ]
+        }
+      }
+    }
+  },
+  "id": "6ad1eed7-99a9-47e2-8184-f5d826e42d54"
+}

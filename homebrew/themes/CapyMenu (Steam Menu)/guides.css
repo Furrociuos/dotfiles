@@ -1,0 +1,125 @@
+/* ---
+CapyMenu (Steam Menu)
+v2.1
+By Capybara / Kalyvara
+
+Guides
+--- */
+
+
+
+/* ---
+Main page
+--- */
+
+
+
+/* Guide list, background */
+.overlayguides_GuideList_3p2SR {
+    background: rgba(var(--capySteam_mainBgColor), var(--capySteam_mainBgOpacity));
+}
+
+/* Guide list, item */
+.overlayguides_GuideListItemBase_1etIu {
+    background: var(--capySteam_mainBgColor);
+}
+
+/* Various text elements
+Head texts (game title + description), section titles, pagination */
+.overlayguides_OverlayGuidesHome_1Biyy .overlayguides_GuidesHomeHeader_1K5yV .overlayguides_AppName_3LiqH,
+.overlayguides_ListTitle_1qkU5,
+.overlayguides_GuidesHomeHeaderDesc_14LPc,
+.overlayguides_GuideList_3p2SR .overlayguides_PagingControls_1VBf9 .overlayguides_PageNumber_19Jds {
+    color: var(--capySteam_mainTextColor);
+}
+
+/* Pagination buttons, disabled */
+button.gamepaddialog_Button_1kn70.DialogButton.Disabled,
+button.gamepaddialog_Button_1kn70.DialogButton[disabled],
+button.gamepaddialog_Button_1kn70.DialogButton:enabled.Disabled,
+button.gamepaddialog_Button_1kn70.DialogButton:enabled[disabled],
+button.gamepaddialog_Button_1kn70.DialogButton:active.Disabled,
+button.gamepaddialog_Button_1kn70.DialogButton:active[disabled],
+button.gamepaddialog_Button_1kn70.DialogButton:hover.Disabled,
+button.gamepaddialog_Button_1kn70.DialogButton:hover[disabled],
+button.gamepaddialog_Button_1kn70.DialogButton:enabled:active:hover.Disabled,
+button.gamepaddialog_Button_1kn70.DialogButton:enabled:active:hover[disabled] {
+    background: none;
+    color: var(--capySteam_mainTextColor);
+}
+
+/* Guide item */
+.overlayguides_GuideTitle_35sEZ,
+.overlayguides_GuideAuthor_28tAd,
+.overlayguides_GuideDescription_DpdGp,
+.overlayguides_UGCRatingStars_1lO3n svg {
+    color: var(--capySteam_mainTextColor);
+}
+
+/* Guide item, selected */
+.overlayguides_GuideListItemBase_1etIu.gpfocus.gpfocuswithin {
+    background: rgb(var(--capySteam_bgHighlightColor));
+}
+.overlayguides_GuideListItemBase_1etIu.gpfocus.gpfocuswithin .overlayguides_GuideTitle_35sEZ,
+.overlayguides_GuideListItemBase_1etIu.gpfocus.gpfocuswithin .overlayguides_GuideAuthor_28tAd,
+.overlayguides_GuideListItemBase_1etIu.gpfocus.gpfocuswithin .overlayguides_GuideDescription_DpdGp,
+.overlayguides_GuideListItemBase_1etIu.gpfocus.gpfocuswithin .overlayguides_UGCRatingStars_1lO3n svg {
+    color: var(--capySteam_hl_mainTextColor);
+}
+
+/* Error loading guides */
+.overlayguides_LoadingGuidesError_1vxns {
+    color: var(--capySteam_mainTextColor);
+}
+
+
+
+/* ---
+Guide page
+--- */
+
+
+
+/* Guide header */
+.overlayguides_GuideDetails_1AjME .overlayguides_GuideDetailsHeader_2_Ivx {
+    border-bottom: none;
+}
+
+/* Table of contents */
+.overlayguides_GuideDetails_1AjME .overlayguides_TableOfContents_CwN4g {
+    border-left: none;
+}
+.overlayguides_GuideDetails_1AjME .overlayguides_TableOfContents_CwN4g .overlayguides_TOCEntry_2bjWQ {
+    background: none;
+    color: var(--capySteam_mainTextColor);
+    font-weight: bold;
+}
+.overlayguides_TOCEntry_2bjWQ.gpfocus.gpfocuswithin {
+    background: rgb(var(--capySteam_bgHighlightColor));
+    color: var(--capySteam_hl_mainTextColor);
+}
+
+/* Chapter title */
+.overlayguides_GuideDetails_1AjME .overlayguides_GuideSubSections_2gRAL .overlayguides_SubSectionTitle_vJoi8 {
+    color: var(--capySteam_mainTextColor);
+}
+
+/* Content */
+.overlayguides_GuideDetails_1AjME .overlayguides_GuideDetailsTitle_d2OwZ,
+.overlayguides_GuideDetails_1AjME .overlayguides_GuideDetailsDesc_1wBkh,
+.overlayguides_GuideDetails_1AjME .overlayguides_GuideSubSections_2gRAL .overlayguides_SubSectionDesc_3qm_0,
+.overlayguides_UGCRating_oTb9Y .overlayguides_UGCTotalRatings_1RTRU {
+    color: var(--capySteam_mainTextColor);
+}
+
+/* Blocks within content */
+.bbcodes_CodeBlock_1paKw {
+    border: 2px solid var(--capySteam_mainTextColor);
+}
+
+/* Links within content */
+.overlayguides_GuideDetails_1AjME .overlayguides_GuideSubSections_2gRAL .overlayguides_SubSectionDesc_3qm_0 a.Focusable span {
+    color: var(--capySteam_mainTextColor);
+    font-weight: bold;
+    text-decoration: underline var(--capySteam_mainTextColor);
+}

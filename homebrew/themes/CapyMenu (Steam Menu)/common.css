@@ -1,0 +1,237 @@
+/* ---
+CapyMenu (Steam Menu)
+v2.1
+By Capybara / Kalyvara
+--- */
+
+
+
+/* ---
+Global variables
+Animations
+--- */
+
+
+
+:root {
+  /* Gradients */
+  --capySteam_tabGradient: linear-gradient(90deg, #c7c7c7, #cecece);
+  --capySteam_panelGradient: linear-gradient(90deg, #c7c7c7, #cecece);
+
+  /* Animations */
+  --capySteam_animGradient: capySteam_def_animGradient 8s ease-in-out infinite forwards;
+}
+
+@keyframes capySteam_def_animGradient { /* from SuchMeme's Colored Toggles */
+  0% {
+    background-position: 0% 50%;
+    background-size: 300% 300%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+    background-size: 300% 300%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+    background-size: 300% 300%;
+  }
+}
+
+/* Footer shadow */
+.mainmenu_FooterBoxShadow_3kHmf {
+  box-shadow: none;
+}
+
+/* Scroll mask */
+.mainmenuapprunning_ScrollMask_322FV {
+  background: #000;
+}
+
+/* Loading throbber */
+.loadingthrobber_ContainerBackground_2ngG3 {
+  background: none;
+}
+
+/* Text field (e.g. Search in Achievements) */
+.gamepaddialog_BasicTextInput_3GCBi, .gamepaddialog_BasicTextInput_3GCBi:not(.disabled):not(.gpfocus):hover {
+  background: none;
+  border-bottom: 2px solid var(--capySteam_mainTextColor);
+}
+.gamepaddialog_BasicTextInput_3GCBi::placeholder, .gamepaddialog_BasicTextInput_3GCBi:not(.disabled):not(.gpfocus)::placeholder {
+  color: var(--capySteam_mainTextColor);
+}
+
+/* Text field, selected */
+.gamepaddialog_BasicTextInput_3GCBi.gpfocus, .gamepaddialog_BasicTextInput_3GCBi.gpfocus:hover {
+  background: rgb(var(--capySteam_bgHighlightColor));
+  border-bottom: 2px solid var(--capySteam_hl_mainTextColor);
+}
+.gamepaddialog_BasicTextInput_3GCBi.gpfocus::placeholder, .gamepaddialog_BasicTextInput_3GCBi.gpfocus:hover::placeholder {
+  color: var(--capySteam_hl_mainTextColor);
+}
+
+/* Text field, user input */
+.gamepaddialog_BasicTextInput_3GCBi {
+  color: var(--capySteam_mainTextColor);
+}
+
+/* Text field, user input, focused */
+.gamepaddialog_BasicTextInput_3GCBi.gpfocus, .gamepaddialog_BasicTextInput_3GCBi.gpfocus:hover {
+  color: var(--capySteam_hl_mainTextColor);
+}
+
+/* Dropdown buttons */
+button.gamepaddialog_Button_1kn70.DialogButton,
+button.gamepaddialog_Button_1kn70.DialogButton.Primary,
+button.gamepaddialog_Button_1kn70.DialogButton:enabled,
+button.gamepaddialog_Button_1kn70.DialogButton:enabled.Primary,
+button.gamepaddialog_Button_1kn70.DialogButton:active,
+button.gamepaddialog_Button_1kn70.DialogButton:active.Primary,
+button.gamepaddialog_Button_1kn70.DialogButton:hover,
+button.gamepaddialog_Button_1kn70.DialogButton:hover.Primary,
+button.gamepaddialog_Button_1kn70.DialogButton:enabled:active:hover,
+button.gamepaddialog_Button_1kn70.DialogButton:enabled:active:hover.Primary {
+  background: none;
+  color: var(--capySteam_mainTextColor);
+  box-shadow: 0px 0px 0px 2px var(--capySteam_mainTextColor);
+}
+
+/* Dropdown buttons, selected */
+button.gamepaddialog_Button_1kn70.DialogButton.gpfocus,
+button.gamepaddialog_Button_1kn70.DialogButton:active,
+button.gamepaddialog_Button_1kn70.DialogButton:enabled.gpfocus,
+button.gamepaddialog_Button_1kn70.DialogButton:enabled:active,
+button.gamepaddialog_Button_1kn70.DialogButton:active.gpfocus,
+button.gamepaddialog_Button_1kn70.DialogButton:active:active,
+button.gamepaddialog_Button_1kn70.DialogButton:hover.gpfocus,
+button.gamepaddialog_Button_1kn70.DialogButton:hover:active,
+button.gamepaddialog_Button_1kn70.DialogButton:enabled:active:hover.gpfocus,
+button.gamepaddialog_Button_1kn70.DialogButton:enabled:active:hover:active {
+  background: rgb(var(--capySteam_bgHighlightColor));
+  color: var(--capySteam_hl_mainTextColor);
+  box-shadow: none;
+}
+
+
+
+/* ---
+Main menu
+--- */
+
+
+/* Panel background */
+.mainmenu_Menu_23IDi {
+  background: rgba(var(--capySteam_mainBgColor), var(--capySteam_mainBgOpacity)) !important;
+}
+  
+/* This removes the grayish blue overlay animation when an item is selected */
+.mainmenu_Item_2w9Tp.mainmenu_Active_10bq5:focus {
+    animation: none;
+}
+
+/* Item, text, regular */
+.mainmenu_ItemLabel_3x-ZK,
+/* Focused item */
+.mainmenu_Item_2w9Tp.mainmenu_Active_10bq5 .mainmenu_ItemIcon_3xZ3Z,
+.mainmenu_Item_2w9Tp.mainmenu_Active_10bq5 .mainmenu_ItemLabel_3x-ZK {
+    color: var(--capySteam_mainTextColor);
+}
+
+/* Item, background & text, highlight */
+.mainmenu_Item_2w9Tp.gpfocus {
+    background: rgba(var(--capySteam_bgHighlightColor), var(--capySteam_bgHighlightOpacity)) !important;
+    animation: none;
+}
+.mainmenu_Item_2w9Tp.gpfocus .marquee_Content_2ADpT {
+  color: var(--capySteam_hl_mainTextColor);
+}
+
+/* Item, icon, regular */
+.mainmenu_ItemIcon_3xZ3Z {
+  color: var(--capySteam_iconColor);
+}
+
+/* Item, icon, highlight */
+.mainmenu_Item_2w9Tp.gpfocus .mainmenu_ItemIcon_3xZ3Z,
+.mainmenu_Item_2w9Tp.mainmenu_Active_10bq5.gpfocus.gpfocuswithin .mainmenu_ItemIcon_3xZ3Z {
+  color: var(--capySteam_hl_iconColor);
+}
+
+/* Focused+unselected item, icon */
+.mainmenu_Item_2w9Tp.mainmenu_Active_10bq5 .mainmenu_ItemIcon_3xZ3Z {
+  color: var(--capySteam_iconColor);
+}
+
+/* Focused+unselected item, label & icon */
+.mainmenu_Menu_23IDi:not(.mainmenu_VR_1ABsh) .mainmenu_Item_2w9Tp.mainmenu_Active_10bq5 .mainmenu_ItemIcon_3xZ3Z {
+  color: var(--capySteam_iconColor);
+}
+.mainmenu_Menu_23IDi:not(.mainmenu_VR_1ABsh) .mainmenu_Item_2w9Tp.mainmenu_Active_10bq5 .mainmenu_ItemLabel_3x-ZK {
+  color: var(--capySteam_mainTextColor);
+}
+.mainmenu_Menu_23IDi:not(.mainmenu_VR_1ABsh) .mainmenu_Item_2w9Tp.mainmenu_Active_10bq5.gpfocus .mainmenu_ItemIcon_3xZ3Z {
+  color: var(--capySteam_hl_iconColor);
+}
+
+
+/* Item, active mark */
+.mainmenu_Item_2w9Tp .mainmenu_ActiveDot_1uLVH {
+  background: rgba(var(--capySteam_markerColor), 255);
+}
+
+/*
+.mainmenu_Item_2w9Tp.mainmenu_Active_10bq5:focus {
+  animation: var(--animGradientType1) !important;
+}
+*/
+
+
+
+/* ---
+Running app menu
+--- */
+
+
+
+/* Running app separator removal */
+.mainmenu_RunnningAppSeparator_33RkH {
+  background: none;
+}
+
+/* Panel background */
+.mainmenuapprunning_NavigationColumn_27FEg {
+    background: rgba(var(--capySteam_mainBgColor), var(--capySteam_mainBgOpacity));
+  border-left: none;
+  border-right: none;
+}
+
+/* Weird gradient removal */
+@media screen and (max-width: 1280px) {
+  .mainmenuapprunning_NavigationColumn_27FEg:before {
+    background: none;
+  }
+}
+
+/* Active tab mark */
+.mainmenuapprunning_NavigationMenuItem_1G0K4 .mainmenuapprunning_ActiveDot_13YbV {
+  background: rgba(var(--capySteam_markerColor), 255) !important;
+}
+
+.mainmenuapprunning_NavigationMenuItem_1G0K4 {
+  color: var(--capySteam_mainTextColor);
+}
+
+/* Item, background & text, highlight */
+.mainmenuapprunning_NavigationMenuItem_1G0K4.gpfocus.gpfocuswithin {
+    background: rgba(var(--capySteam_bgHighlightColor), var(--capySteam_bgHighlightOpacity)) !important;
+    color: var(--capySteam_hl_mainTextColor) !important;
+    mix-blend-mode: normal;
+}
+
+/* Item, focused, text */
+.mainmenuapprunning_NavigationMenuItem_1G0K4.mainmenuapprunning_Active_1jG8i {
+  font-weight: bold;
+  color: var(--capySteam_mainTextColor);
+}

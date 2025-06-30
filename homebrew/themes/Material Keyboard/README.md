@@ -1,0 +1,1 @@
+Brings Android's Material Design to the Steam Deck keyboard. Only applies to the default keyboard theme.

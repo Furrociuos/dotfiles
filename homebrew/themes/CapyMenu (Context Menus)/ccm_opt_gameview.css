@@ -1,0 +1,10 @@
+.BasicUI .appactionbutton_Green_3cI5T .appactionbutton_ButtonChild_2AzIX.Focusable:focus {
+    background: var(--ccm-playfocus-bg);
+}
+.BasicUI .appactionbutton_Green_3cI5T .appactionbutton_ButtonChild_2AzIX:focus svg path {
+    stroke: none !important;
+    fill: var(--ccm-playfocus-fg);
+}
+.BasicUI .appactionbutton_Green_3cI5T .appactionbutton_ButtonChild_2AzIX:focus .appactionbutton_ButtonText_33cnX {
+    color: var(--ccm-playfocus-fg) !important;
+}

@@ -1,0 +1,8 @@
+#header_profile {
+    padding-right:0px;
+    padding-left:6px;
+}
+
+#header_profile .avatarStatus {
+    width: 0px;
+}

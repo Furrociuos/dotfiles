@@ -1,0 +1,31 @@
+.footer_BasicFooter_3T1iF {
+	animation: DELLY-footer-bg 20s infinite linear;
+	backdrop-filter: blur(25px);
+}
+
+@keyframes DELLY-footer-bg {
+	0% {
+		background-color: #FF000030;
+	}
+	25% {
+		background-color: #FFA50030;
+	}
+	37.5% {
+		background-color: #FFFF0030;
+	}
+	50% {
+		background-color: #7FFF0030;
+	}
+	62.5% {
+		background-color: #00FFFF30;
+	}
+	75% {
+		background-color: #0000FF30;
+	}
+	87.5% {
+		background-color: #9932CC30;
+	}
+	100% {
+		background-color: #FF149330;
+	}
+}

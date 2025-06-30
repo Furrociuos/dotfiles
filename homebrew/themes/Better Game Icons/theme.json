@@ -1,0 +1,91 @@
+{
+  "name": "Better Game Icons",
+  "version": "v1.4",
+  "author": "RasitAyaz",
+  "manifest_version": 5,
+  "inject": {
+    "shared.css": [
+      "SP",
+      "MainMenu",
+      "QuickAccess"
+    ]
+  },
+  "patches": {
+    "Radius": {
+      "default": "0px",
+      "type": "slider",
+      "values": {
+        "0px": {
+          "--game-icon-radius": [
+            "0px",
+            "SP",
+            "MainMenu",
+            "QuickAccess"
+          ]
+        },
+        "3px": {
+          "--game-icon-radius": [
+            "3px",
+            "SP",
+            "MainMenu",
+            "QuickAccess"
+          ]
+        },
+        "5px": {
+          "--game-icon-radius": [
+            "5px",
+            "SP",
+            "MainMenu",
+            "QuickAccess"
+          ]
+        },
+        "10px": {
+          "--game-icon-radius": [
+            "10px",
+            "SP",
+            "MainMenu",
+            "QuickAccess"
+          ]
+        },
+        "15px": {
+          "--game-icon-radius": [
+            "15px",
+            "SP",
+            "MainMenu",
+            "QuickAccess"
+          ]
+        },
+        "30px": {
+          "--game-icon-radius": [
+            "30px",
+            "SP",
+            "MainMenu",
+            "QuickAccess"
+          ]
+        }
+      }
+    },
+    "Downloading Icon Background ": {
+      "default": "Transparent",
+      "type": "dropdown",
+      "values": {
+        "Transparent": {
+          "download_indicator_bg/transparent.css": [
+            "SP"
+          ]
+        },
+        "Transparent with shadow": {
+          "download_indicator_bg/transparent_with_shadow.css": [
+            "SP"
+          ]
+        },
+        "Black": {
+          "download_indicator_bg/black.css": [
+            "SP"
+          ]
+        }
+      }
+    }
+  },
+  "id": "a4e9c87b-5201-4ba3-b7ef-204fdd934b53"
+}

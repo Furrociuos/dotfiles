@@ -1,0 +1,6 @@
+.gamepadslider_SliderTrack_Mq25N {
+	--left-track-color: var(--volume-bar-color);
+}
+.gamepadslider_SliderTrackDark_3UIUD {
+	background-color: var(--volume-background-bar-color);
+}

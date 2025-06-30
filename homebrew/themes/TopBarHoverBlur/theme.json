@@ -1,0 +1,12 @@
+{
+  "name": "TopBarHoverBlur",
+  "version": "v1.0",
+  "author": "Sendaford",
+  "manifest_version": 3,
+  "inject": {
+    "shared.css": [
+      "SP"
+    ]
+  },
+  "id": "04217c8c-d274-440e-ab5e-960765d9bec8"
+}

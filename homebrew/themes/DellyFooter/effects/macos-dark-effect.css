@@ -1,0 +1,23 @@
+.footer_BasicFooter_3T1iF {
+	background: rgba(52, 52, 52, 0.5);
+	backdrop-filter: blur(15px);
+	border-radius: var(--DELLY-footer-height);
+	border: 2px solid rgba(30, 30, 30, 0.8);
+	width: unset;
+	left: 5px;
+	bottom: 5px;
+	right: 5px;
+	min-height: calc(var(--DELLY-footer-height) - 10px) !important;
+	padding: 0 !important;
+}
+
+.footer_FooterLegend_2JJDH {
+	padding: 0 calc(6px + 1.4vw) !important;
+}
+
+.footericons_SizeMedium_3-w0R,
+.actionbuttonlegenditem_FooterGlyphSize_223Oc,
+.actionbuttonlegenditem_ActionButtonLabel_31Jnn {
+	color: #d2d2d2 !important;
+	filter: drop-shadow(0px 0px 5px black);
+}

@@ -1,0 +1,179 @@
+{
+  "name": "Round Main Menu and QAM",
+  "author": "Theos & Metagawa",
+  "version": "v1.0",
+  "manifest_version": 6,
+  "inject": {},
+  "dependencies": {},
+  "patches": {
+    "Round Main Menu": {
+      "type": "checkbox",
+      "default": "Yes",
+      "values": {
+        "No": {},
+        "Yes": {
+          "RoundMainMenu.css": [
+            "MainMenu"
+          ]
+        }
+      }
+    },
+    "Main Menu Roundness": {
+      "type": "slider",
+      "default": "0.5",
+      "values": {
+        "0.0": {
+          "--custom-Main-Menu-Radius": [
+            "0",
+            "MainMenu"
+          ]
+        },
+        "0.1": {
+          "--custom-Main-Menu-Radius": [
+            "3px",
+            "MainMenu"
+          ]
+        },
+        "0.2": {
+          "--custom-Main-Menu-Radius": [
+            "6px",
+            "MainMenu"
+          ]
+        },
+        "0.3": {
+          "--custom-Main-Menu-Radius": [
+            "10px",
+            "MainMenu"
+          ]
+        },
+        "0.4": {
+          "--custom-Main-Menu-Radius": [
+            "13px",
+            "MainMenu"
+          ]
+        },
+        "0.5": {
+          "--custom-Main-Menu-Radius": [
+            "16px",
+            "MainMenu"
+          ]
+        },
+        "0.6": {
+          "--custom-Main-Menu-Radius": [
+            "19px",
+            "MainMenu"
+          ]
+        },
+        "0.7": {
+          "--custom-Main-Menu-Radius": [
+            "22px",
+            "MainMenu"
+          ]
+        },
+        "0.8": {
+          "--custom-Main-Menu-Radius": [
+            "27px",
+            "MainMenu"
+          ]
+        },
+        "0.9": {
+          "--custom-Main-Menu-Radius": [
+            "29px",
+            "MainMenu"
+          ]
+        },
+        "1": {
+          "--custom-Main-Menu-Radius": [
+            "32px",
+            "MainMenu"
+          ]
+        }
+      }
+    },
+    "Round QAM": {
+      "type": "checkbox",
+      "default": "Yes",
+      "values": {
+        "No": {},
+        "Yes": {
+          "RoundQAM.css": [
+            "QuickAccess"
+          ]
+        }
+      }
+    },
+    "QAM Roundness": {
+      "type": "slider",
+      "default": "0.5",
+      "values": {
+        "0.0": {
+          "--custom-QAM-Radius": [
+            "0",
+            "QuickAccess"
+          ]
+        },
+        "0.1": {
+          "--custom-QAM-Radius": [
+            "3px",
+            "QuickAccess"
+          ]
+        },
+        "0.2": {
+          "--custom-QAM-Radius": [
+            "6px",
+            "QuickAccess"
+          ]
+        },
+        "0.3": {
+          "--custom-QAM-Radius": [
+            "10px",
+            "QuickAccess"
+          ]
+        },
+        "0.4": {
+          "--custom-QAM-Radius": [
+            "13px",
+            "QuickAccess"
+          ]
+        },
+        "0.5": {
+          "--custom-QAM-Radius": [
+            "16px",
+            "QuickAccess"
+          ]
+        },
+        "0.6": {
+          "--custom-QAM-Radius": [
+            "19px",
+            "QuickAccess"
+          ]
+        },
+        "0.7": {
+          "--custom-QAM-Radius": [
+            "22px",
+            "QuickAccess"
+          ]
+        },
+        "0.8": {
+          "--custom-QAM-Radius": [
+            "27px",
+            "QuickAccess"
+          ]
+        },
+        "0.9": {
+          "--custom-QAM-Radius": [
+            "29px",
+            "QuickAccess"
+          ]
+        },
+        "1": {
+          "--custom-QAM-Radius": [
+            "32px",
+            "QuickAccess"
+          ]
+        }
+      }
+    }
+  },
+  "id": "cefbc589-2d34-44b0-8f75-6fbb7ac3679b"
+}

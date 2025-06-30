@@ -1,0 +1,319 @@
+{
+  "name": "Volume Tweaker",
+  "author": "Tripticon84",
+  "version": "v1.7",
+  "manifest_version": 5,
+  "inject": {
+    "shared.css": [
+      "SP"
+    ]
+  },
+  "dependencies": {},
+  "patches": {
+    "Preview": {
+      "type": "checkbox",
+      "default": "No",
+      "values": {
+        "No": {},
+        "Yes": {
+          "preview.css": [
+            "SP"
+          ]
+        }
+      },
+      "components": []
+    },
+    "Position": {
+      "type": "slider",
+      "default": "Top Left",
+      "values": {
+        "Top Left": {
+          "position/top-left.css": [
+            "SP"
+          ]
+        },
+        "Top Center": {
+          "position/top-center.css": [
+            "SP"
+          ]
+        },
+        "Top Right": {
+          "position/top-right.css": [
+            "SP"
+          ]
+        },
+        "Bottom Left": {
+          "position/bottom-left.css": [
+            "SP"
+          ]
+        },
+        "Bottom Center": {
+          "position/bottom-center.css": [
+            "SP"
+          ]
+        },
+        "Bottom Right": {
+          "position/bottom-right.css": [
+            "SP"
+          ]
+        }
+      },
+      "components": []
+    },
+    "Text Position": {
+      "type": "slider",
+      "default": "Right",
+      "values": {
+        "Right": {
+          "text/right.css": [
+            "SP"
+          ]
+        },
+        "Center": {
+          "text/center.css": [
+            "SP"
+          ]
+        },
+        "Left": {
+          "text/left.css": [
+            "SP"
+          ]
+        },
+        "Hidden": {
+          "text/hidden.css": [
+            "SP"
+          ]
+        }
+      },
+      "components": []
+    },
+    "Width": {
+      "type": "slider",
+      "default": "5",
+      "values": {
+        "1": {
+          "width/1.css": [
+            "SP"
+          ]
+        },
+        "2": {
+          "width/2.css": [
+            "SP"
+          ]
+        },
+        "3": {
+          "width/3.css": [
+            "SP"
+          ]
+        },
+        "4": {
+          "width/4.css": [
+            "SP"
+          ]
+        },
+        "5": {
+          "width/5.css": [
+            "SP"
+          ]
+        },
+        "6": {
+          "width/6.css": [
+            "SP"
+          ]
+        },
+        "7": {
+          "width/7.css": [
+            "SP"
+          ]
+        },
+        "8": {
+          "width/8.css": [
+            "SP"
+          ]
+        },
+        "9": {
+          "width/9.css": [
+            "SP"
+          ]
+        },
+        "10": {
+          "width/10.css": [
+            "SP"
+          ]
+        }
+      },
+      "components": []
+    },
+    "Round Corners": {
+      "type": "slider",
+      "default": "None",
+      "values": {
+        "None": {},
+        "3px": {
+          "round/3px.css": [
+            "SP"
+          ]
+        },
+        "5px": {
+          "round/5px.css": [
+            "SP"
+          ]
+        },
+        "8px": {
+          "round/8px.css": [
+            "SP"
+          ]
+        },
+        "10px": {
+          "round/10px.css": [
+            "SP"
+          ]
+        },
+        "13px": {
+          "round/13px.css": [
+            "SP"
+          ]
+        },
+        "16px": {
+          "round/16px.css": [
+            "SP"
+          ]
+        }
+      },
+      "components": []
+    },
+    "Bar animation": {
+      "type": "checkbox",
+      "default": "No",
+      "values": {
+        "No": {},
+        "Yes": {
+          "animation.css": [
+            "SP"
+          ]
+        }
+      },
+      "components": []
+    },
+    "Speaker Icon": {
+      "type": "checkbox",
+      "default": "Yes",
+      "values": {
+        "Yes": {},
+        "No": {
+          "speaker.css": [
+            "SP"
+          ]
+        }
+      },
+      "components": []
+    },
+    "Background Color": {
+      "type": "checkbox",
+      "default": "No",
+      "values": {
+        "No": {},
+        "Yes": {
+          "colors/background-color.css": [
+            "SP"
+          ]
+        }
+      },
+      "components": [
+        {
+          "name": "Background Color Picker",
+          "type": "color-picker",
+          "on": "Yes",
+          "default": "#23262e",
+          "css_variable": "volume-background-color",
+          "tabs": [
+            "SP"
+          ]
+        }
+      ]
+    },
+    "Speaker Color": {
+      "type": "checkbox",
+      "default": "No",
+      "values": {
+        "No": {},
+        "Yes": {
+          "colors/speaker-color.css": [
+            "SP"
+          ]
+        }
+      },
+      "components": [
+        {
+          "name": "Speaker Color Picker",
+          "type": "color-picker",
+          "on": "Yes",
+          "default": "#FFFFFF",
+          "css_variable": "volume-speaker-color",
+          "tabs": [
+            "SP"
+          ]
+        }
+      ]
+    },
+    "Bar Color": {
+      "type": "checkbox",
+      "default": "No",
+      "values": {
+        "No": {},
+        "Yes": {
+          "colors/bar-color.css": [
+            "SP"
+          ]
+        }
+      },
+      "components": [
+        {
+          "name": "Bar Color Picker",
+          "type": "color-picker",
+          "on": "Yes",
+          "default": "#1A9fff",
+          "css_variable": "volume-bar-color",
+          "tabs": [
+            "SP"
+          ]
+        },
+        {
+          "name": "Background Bar Picker",
+          "type": "color-picker",
+          "on": "Yes",
+          "default": "#000000",
+          "css_variable": "volume-background-bar-color",
+          "tabs": [
+            "SP"
+          ]
+        }
+      ]
+    },
+    "Text Color": {
+      "type": "checkbox",
+      "default": "No",
+      "values": {
+        "Yes": {
+          "colors/text-color.css": [
+            "SP"
+          ]
+        },
+        "No": {}
+      },
+      "components": [
+        {
+          "name": "Text Color Picker",
+          "type": "color-picker",
+          "on": "Yes",
+          "default": "#969696",
+          "css_variable": "volume-text-color",
+          "tabs": [
+            "SP"
+          ]
+        }
+      ]
+    }
+  },
+  "id": "afb5f41d-34aa-40c2-9cbc-3d941846b990"
+}

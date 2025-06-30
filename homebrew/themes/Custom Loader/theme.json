@@ -1,0 +1,201 @@
+{
+  "name": "Custom Loader",
+  "author": "Midnight",
+  "version": "v1.3.2",
+  "manifest_version": 8,
+  "inject": {},
+  "dependencies": {},
+  "patches": {
+    "Choose Loader": {
+      "type": "dropdown",
+      "default": "Loading Buddy",
+      "values": {
+        "Loading Buddy": {
+          "css/loadingbuddy.css": [
+            "SP"
+          ]
+        },
+        "Labs": {
+          "css/labs.css": [
+            "SP"
+          ]
+        },
+        "Cat": {
+          "css/cat.css": [
+            "SP"
+          ]
+        },
+        "Custom": {
+          "css/custom.css": [
+            "SP"
+          ]
+        }
+      },
+      "components": [
+        {
+          "name": "Custom Image",
+          "type": "image-picker",
+          "on": "Custom",
+          "default": "Custom Loader/images/loadingbuddy.gif",
+          "css_variable": "loader-image",
+          "tabs": [
+            "SP"
+          ]
+        }
+      ]
+    },
+    "Fullscreen": {
+      "type": "checkbox",
+      "default": "No",
+      "values": {
+        "Yes": {
+          "--loader-size": [
+            "100%",
+            "SP"
+          ]
+        },
+        "No": {}
+      },
+      "components": []
+    },
+    "Custom Image Scale": {
+      "type": "slider",
+      "default": "0",
+      "values": {
+        "-3": {
+          "--loader-size": [
+            "50px",
+            "SP"
+          ]
+        },
+        "-2": {
+          "--loader-size": [
+            "75px",
+            "SP"
+          ]
+        },
+        "-1": {
+          "--loader-size": [
+            "100px",
+            "SP"
+          ]
+        },
+        "0": {
+          "--loader-size": [
+            "150px",
+            "SP"
+          ]
+        },
+        "1": {
+          "--loader-size": [
+            "200px",
+            "SP"
+          ]
+        },
+        "2": {
+          "--loader-size": [
+            "250px",
+            "SP"
+          ]
+        },
+        "3": {
+          "--loader-size": [
+            "300px",
+            "SP"
+          ]
+        }
+      },
+      "components": []
+    },
+    "Custom Image Location For Small GIFs": {
+      "type": "dropdown",
+      "default": "Center",
+      "values": {
+        "Center": {
+          "--loader-position": [
+            "center",
+            "SP"
+          ]
+        },
+        "Top Left": {
+          "--loader-position": [
+            "absolute",
+            "SP"
+          ],
+          "--loader-left": [
+            "25px",
+            "SP"
+          ],
+          "--loader-top": [
+            "25px",
+            "SP"
+          ]
+        },
+        "Top Right": {
+          "--loader-position": [
+            "absolute",
+            "SP"
+          ],
+          "--loader-right": [
+            "25px",
+            "SP"
+          ],
+          "--loader-top": [
+            "25px",
+            "SP"
+          ]
+        },
+        "Bottom Left": {
+          "--loader-position": [
+            "absolute",
+            "SP"
+          ],
+          "--loader-left": [
+            "25px",
+            "SP"
+          ],
+          "--loader-bottom": [
+            "25px",
+            "SP"
+          ]
+        },
+        "Bottom Right": {
+          "--loader-position": [
+            "absolute",
+            "SP"
+          ],
+          "--loader-right": [
+            "25px",
+            "SP"
+          ],
+          "--loader-bottom": [
+            "25px",
+            "SP"
+          ]
+        }
+      },
+      "components": []
+    },
+    "Change Background Color": {
+      "type": "checkbox",
+      "default": "No",
+      "values": {
+        "Yes": {},
+        "No": {}
+      },
+      "components": [
+        {
+          "name": "Background Color",
+          "type": "color-picker",
+          "on": "Yes",
+          "default": "#000000",
+          "css_variable": "--loader-color",
+          "tabs": [
+            "SP"
+          ]
+        }
+      ]
+    }
+  },
+  "id": "46095df9-fae2-4af2-8e77-27188af4020d"
+}

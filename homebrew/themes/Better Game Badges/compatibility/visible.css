@@ -1,0 +1,8 @@
+.BasicUI .appportrait_LibraryItemBox_WYgDg .appportrait_SteamDeckCompatIcon_3kDT9,
+.BasicUI .gamecapsule_GameCapsule_fXdhj .gamecapsule_DeckCompat_Tl-6l {
+  opacity: 1;
+}
+
+.BasicUI .gamecapsule_GameCapsule_fXdhj .gamecapsule_DeckCompat_Tl-6l {
+  display: flex;
+}

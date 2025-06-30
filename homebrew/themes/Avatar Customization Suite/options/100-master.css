@@ -1,0 +1,125 @@
+/* Shared */
+
+        #header_profile {
+            padding-right:0px;
+            padding-left:5px
+        }
+
+        /*
+
+        #header_profile .avatar {
+            box-shadow: 2px 2px 10px 1px #00000054;
+        }
+
+        */
+
+/* Status Options */
+
+    /* Side */
+
+        #header_profile {
+            padding-right:16px;
+            padding-left:5px
+        }
+
+        #header_profile .avatarStatus {
+            top: 12px;
+            right: -18px;
+
+            width:8px;
+            height:8px;
+
+            border-radius: 100%;
+
+            box-shadow: 2px 2px 10px 1px #00000054;
+        }
+
+    /* Edge */
+
+        #header_profile .avatar {
+            box-shadow: none;
+        }
+
+        #header_profile .avatarStatus {
+            top:-2px;
+            right: -2px;
+
+            width:36px;
+            height:36px;
+
+            z-index:-1;
+
+            box-shadow: 2px 2px 10px 1px #00000054;
+        }
+
+    /* No Status */
+
+        #header_profile .avatarStatus {
+            width:0px;
+        }
+
+/* Avatar Options */
+
+
+    /* Normal */
+
+        /* Nothing lol */
+
+    /* Frameless */
+
+        #header_profile .avatarFrame {
+            display:none;
+        }
+
+    /* Round */
+
+        #header_profile .avatar {
+            border-radius: 100%;
+        }
+
+        #header_profile .avatarFrame {
+            display:none;
+        }
+
+        #header_profile .avatarStatus {
+            border-radius: 100%;
+        }
+
+    /* Status Only */
+
+        #header_profile .avatarFrame {
+            display:none;
+        }
+
+        #header_profile .avatar {
+            display:none;
+        }
+
+        #header_profile {
+            width:16px;
+            padding-right:0px;
+            padding-left:10px;
+        }
+
+        #header_profile .avatarStatus {
+            width: 10px;
+            height: 10px;
+
+            top: 11px;
+            right: 5px;
+
+            border-radius: 100%;
+        }
+
+
+    /* Neither */
+
+        #header_profile {
+            width:0px;
+            padding-right:0px;
+            padding-left:5px;
+        }
+
+        #header_profile .avatarStatus {
+            width: 0px;
+        }

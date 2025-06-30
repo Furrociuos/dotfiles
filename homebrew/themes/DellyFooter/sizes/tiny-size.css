@@ -1,0 +1,24 @@
+:root {
+	--DELLY-footer-height: 20px;
+	--DELLY-round-corners: 20px 20px 0 0;
+	--DELLY-font-size: 8px;
+	--DELLY-image-size: 12px;
+}
+
+.footer_BasicFooter_3T1iF {
+	min-height: var(--DELLY-footer-height);
+	height: var(--DELLY-footer-height);
+}
+
+.footer_FooterLegend_2JJDH {
+	gap: 3px 10px;
+}
+
+.footericons_SizeMedium_3-w0R,
+.actionbuttonlegenditem_FooterGlyphSize_223Oc {
+	height: var(--DELLY-image-size);
+}
+
+.actionbuttonlegenditem_ActionButtonLabel_31Jnn {
+	font-size: var(--DELLY-font-size) !important;
+}

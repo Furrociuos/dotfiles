@@ -1,0 +1,29 @@
+:root {
+    --ren-tilt-angle: -5deg;
+    --ren-image-zoom: 1.15;
+    --ren-most-recent-offset: 2%;
+    --ren-view-more-offset: -7%;
+    --ren-view-more-focus-scale: 0.88;
+}
+
+
+/*Draw focused tile and glow on top of the rest, also while tabbed out*/
+.gamepadhome_RecentSection_39tNv 
+.basicgamecarousel_BasicGameCarousel_3MdH5
+.ReactVirtualized__Grid__innerScrollContainer 
+> div.gpfocuswithin
+,
+.gamepadhome_RecentSection_39tNv 
+.basicgamecarousel_BasicGameCarousel_3MdH5
+.ReactVirtualized__Grid__innerScrollContainer 
+> div[tabindex]
+{
+    position: relative;
+    z-index: 1;  
+}
+
+/*Preserves the 3d transform, fixes flickering when rotating*/
+.gamepadhome_RecentSection_39tNv
+.basicgamecarousel_BasicGameCarouselItemMediaContainer_1HIFN > div{
+	transform-style: preserve-3d;
+}

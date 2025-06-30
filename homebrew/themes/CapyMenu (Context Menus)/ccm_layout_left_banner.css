@@ -1,0 +1,30 @@
+/* ---
+CapyMenu CM v2.0
+Layout - Left + Banner
+--- */
+
+
+.gamepadcontextmenu_BasicContextMenuModal_2xS2_ {
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+/* Global container */
+.gamepadcontextmenu_BasicContextMenuContainer_2ZDB6 {
+    justify-content: left;
+    margin: auto;
+    width: 100%;
+}
+
+/* This should not affect sharp-edged layouts */
+.gamepadcontextmenu_contextMenuContents_sIgB-:first-child {
+    border-top-left-radius: 0; border-bottom-left-radius: 0;
+}
+
+/* Title */
+.gamepadcontextmenu_BasicContextMenuHeader_2Jp8B {
+    align-self: flex-start;
+    display: inherit;
+    width: 100vw;
+    border-radius: 0;
+}

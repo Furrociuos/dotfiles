@@ -1,0 +1,21 @@
+#header_profile {
+    padding-right:18px;
+    padding-left:6px;
+}
+
+#header_profile .avatar{
+    box-shadow:none;
+    border-radius: 100%;
+}
+
+#header_profile .avatarFrame {
+    display:none;
+}
+
+#header_profile .avatarStatus {
+    top: 12px;
+    right: -18px;
+
+    width:8px;
+    height:8px;
+}

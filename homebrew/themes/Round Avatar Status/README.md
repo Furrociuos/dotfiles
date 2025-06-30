@@ -1,0 +1,1 @@
+This makes the avatar status at the top right of the screen appear as a round dot instead of a vertical bar.

@@ -1,0 +1,135 @@
+{
+  "name": "DellyFooter",
+  "author": "Dellyare",
+  "manifest_version": 4,
+  "version": "v1.1",
+  "inject": {
+    "shared.css": [
+      "SP"
+    ]
+  },
+  "patches": {
+    "Effect": {
+      "default": "Blur",
+      "type": "dropdown",
+      "values": {
+        "None": {},
+        "Blur": {
+          "effects/blur-effect.css": [
+            "SP"
+          ]
+        },
+        "Gradient": {
+          "effects/gradient-effect.css": [
+            "SP"
+          ]
+        },
+        "RGB": {
+          "effects/rgb-effect.css": [
+            "SP"
+          ]
+        },
+        "RGB Breathing": {
+          "effects/breathing-rgb-effect.css": [
+            "SP"
+          ]
+        },
+        "Christmas": {
+          "effects/christmas-effect.css": [
+            "SP"
+          ]
+        },
+        "Transparent": {
+          "effects/transparent-effect.css": [
+            "SP"
+          ]
+        },
+        "Inverted": {
+          "effects/inverted-effect.css": [
+            "SP"
+          ]
+        },
+        "MacOS (Light)": {
+          "effects/macos-light-effect.css": [
+            "SP"
+          ]
+        },
+        "MacOS (Dark)": {
+          "effects/macos-dark-effect.css": [
+            "SP"
+          ]
+        }
+      }
+    },
+    "Size": {
+      "default": "Default",
+      "type": "dropdown",
+      "values": {
+        "Default": {
+          "sizes/default-size.css": [
+            "SP"
+          ]
+        },
+        "Small": {
+          "sizes/small-size.css": [
+            "SP"
+          ]
+        },
+        "Smaller": {
+          "sizes/tiny-size.css": [
+            "SP"
+          ]
+        }
+      }
+    },
+    "Rounded corners": {
+      "default": "No",
+      "type": "checkbox",
+      "values": {
+        "No": {},
+        "Yes": {
+          "checkboxes/round-corners.css": [
+            "SP"
+          ]
+        }
+      }
+    },
+    "Normal font": {
+      "default": "No",
+      "type": "checkbox",
+      "values": {
+        "No": {},
+        "Yes": {
+          "checkboxes/normal-font.css": [
+            "SP"
+          ]
+        }
+      }
+    },
+    "Remove text": {
+      "default": "No",
+      "type": "checkbox",
+      "values": {
+        "No": {},
+        "Yes": {
+          "checkboxes/remove-font.css": [
+            "SP"
+          ]
+        }
+      }
+    },
+    "Remove icons": {
+      "default": "No",
+      "type": "checkbox",
+      "values": {
+        "No": {},
+        "Yes": {
+          "checkboxes/remove-icons.css": [
+            "SP"
+          ]
+        }
+      }
+    }
+  },
+  "id": "43bc9ce3-61e4-4d9f-9fc1-3fdee776a6dc"
+}

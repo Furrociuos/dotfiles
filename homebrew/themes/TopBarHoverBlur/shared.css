@@ -1,0 +1,7 @@
+.header_Header_1E_SL::before {
+	backdrop-filter: blur(8px);
+}
+
+.header_Header_1E_SL.header_OverrideHeaderBackground_MS2nB.gpfocuswithin::before {
+	background-color: rgba(0,0,0,.1);
+}

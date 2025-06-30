@@ -1,0 +1,9 @@
+:root {
+    --capySteam_markerColor: linear-gradient(180deg, var(--capySteam_markerGrad1), var(--capySteam_markerGrad2), var(--capySteam_markerGrad3)) !important;
+}
+
+.mainmenu_Item_2w9Tp .mainmenu_ActiveDot_1uLVH,
+.mainmenuapprunning_NavigationMenuItem_1G0K4 .mainmenuapprunning_ActiveDot_13YbV {
+    background: var(--capySteam_markerColor) !important;
+    animation: var(--capySteam_animGradient);
+}

@@ -1,0 +1,4 @@
+.gamepadui_GamepadDialogOverlay_34Euf .ModalOverlayBackground {
+    background: radial-gradient(circle at 80% 0%, var(--ccm-bgfilter-grad1), var(--ccm-bgfilter-grad2));
+    backdrop-filter: blur(4px);
+}

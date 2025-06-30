@@ -1,0 +1,180 @@
+/* ---
+CapyMenu CM v2.0
+--- */
+
+:root {
+    /* These variables will be reassigned as options are toggled
+    Without any input from the user they default to the following variables which are the user-defined settings for focused items
+    If the user chooses any custom option for the Play/Destruct Button then --ccm-playfocus-bg/fg (resp. --ccm-destructfocus-bg/fg) will be re-injected with the new values as per theme.json
+    */
+    --ccm-playfocus-bg: var(--ccm-itemfocus-bg);
+    --ccm-playfocus-fg: var(--ccm-itemfocus-fg);
+    --ccm-destructfocus-bg: var(--ccm-itemfocus-bg);
+    --ccm-destructfocus-fg: var(--ccm-itemfocus-fg);
+}
+
+/* Title */
+.gamepadcontextmenu_BasicContextMenuHeader_2Jp8B {
+    background: var(--ccm-title-bg);
+    color: var(--ccm-title-fg);
+    margin: 0 0 10px 0;
+    padding: 12px 16px 12px 16px;
+    align-self: center;
+}
+
+/* Context Menu containers */
+.gamepadcontextmenu_contextMenuContents_sIgB- {
+    background: var(--ccm-body-bg);
+    filter: none;
+}
+.gamepadcontextmenu_contextMenuContents_sIgB->:first-child {
+    margin-top: 0;
+}
+.gamepadcontextmenu_contextMenuContents_sIgB->:last-child {
+    margin-bottom: 0;
+}
+
+/* Context Menu item */
+.gamepadcontextmenu_contextMenuItem_1sdvo,
+.gamepadcontextmenu_contextMenuItem_1sdvo.Stream,
+.gamepadcontextmenu_contextMenuItem_1sdvo.Connect,
+.gamepadcontextmenu_contextMenuItem_1sdvo.Launch,
+.gamepadcontextmenu_contextMenuItem_1sdvo.PlayMusic,
+.gamepadcontextmenu_contextMenuItem_1sdvo.Play,
+.gamepadcontextmenu_contextMenuItem_1sdvo.Resume,
+.gamepadcontextmenu_contextMenuItem_1sdvo.BorrowApp,
+.gamepadcontextmenu_contextMenuItem_1sdvo.Download,
+.gamepadcontextmenu_contextMenuItem_1sdvo.Update,
+.gamepadcontextmenu_contextMenuItem_1sdvo.PreLoad,
+.gamepadcontextmenu_contextMenuItem_1sdvo.Install,
+.gamepadcontextmenu_contextMenuItem_1sdvo.Pause,
+.gamepadcontextmenu_contextMenuItem_1sdvo.Stop,
+.gamepadcontextmenu_contextMenuItem_1sdvo.Cancel {
+    background: transparent;
+}
+.gamepadcontextmenu_ContextMenuSeparator_1KL6n {
+    background: #ffffff0c;
+}
+.gamepadcontextmenu_contextMenuItem_1sdvo:hover {
+    background: #ffffff0c;
+}
+
+/* Item normal */
+.gamepadcontextmenu_contextMenuItem_1sdvo {
+    color: var(--ccm-body-fg);
+}
+.gamepadcontextmenu_SubMenu_1_tPN.gamepadcontextmenu_contextMenuItem_1sdvo.contextMenuItem .gamepadcontextmenu_Arrow_2EDBb svg {
+    fill: var(--ccm-body-fg);
+}
+.gamepadcontextmenu_contextMenuItem_1sdvo .SVGIcon_PlusCircle line {
+    stroke: var(--ccm-body-fg);
+}
+
+.gamepadcontextmenu_contextMenuItem_1sdvo.Stream,
+.gamepadcontextmenu_contextMenuItem_1sdvo.Connect,
+.gamepadcontextmenu_contextMenuItem_1sdvo.Launch,
+.gamepadcontextmenu_contextMenuItem_1sdvo.PlayMusic,
+.gamepadcontextmenu_contextMenuItem_1sdvo.Play,
+.gamepadcontextmenu_contextMenuItem_1sdvo.Resume,
+.gamepadcontextmenu_contextMenuItem_1sdvo.BorrowApp,
+.gamepadcontextmenu_contextMenuItem_1sdvo.Download,
+.gamepadcontextmenu_contextMenuItem_1sdvo.Update,
+.gamepadcontextmenu_contextMenuItem_1sdvo.PreLoad,
+.gamepadcontextmenu_contextMenuItem_1sdvo.Install,
+.gamepadcontextmenu_contextMenuItem_1sdvo.Pause,
+.gamepadcontextmenu_contextMenuItem_1sdvo.Stop,
+.gamepadcontextmenu_contextMenuItem_1sdvo.Cancel {
+    color: var(--ccm-body-fg);
+    font-weight: bold;
+}
+
+/* Item focus */
+.gamepadcontextmenu_contextMenuItem_1sdvo.gamepadcontextmenu_Focused_X813r {
+    background: var(--ccm-itemfocus-bg);
+    color: var(--ccm-itemfocus-fg);
+}
+.gamepadcontextmenu_SubMenu_1_tPN.gamepadcontextmenu_contextMenuItem_1sdvo.contextMenuItem.gamepadcontextmenu_Focused_X813r .gamepadcontextmenu_Arrow_2EDBb svg {
+    fill: var(--ccm-itemfocus-fg);
+}
+.gamepadcontextmenu_contextMenuItem_1sdvo.gamepadcontextmenu_Focused_X813r.gpfocus .SVGIcon_PlusCircle line {
+    stroke: var(--ccm-itemfocus-fg);
+}
+
+.gamepadcontextmenu_contextMenuItem_1sdvo.Launch.gpfocus,
+.gamepadcontextmenu_contextMenuItem_1sdvo.PlayMusic.gpfocus,
+.gamepadcontextmenu_contextMenuItem_1sdvo.Play.gpfocus,
+.gamepadcontextmenu_contextMenuItem_1sdvo.Resume.gpfocus {
+    background: var(--ccm-playfocus-bg);
+    color: var(--ccm-playfocus-fg);
+}
+.gamepadcontextmenu_contextMenuItem_1sdvo.Install.gpfocus,
+.gamepadcontextmenu_contextMenuItem_1sdvo.Stream.gpfocus,
+.gamepadcontextmenu_contextMenuItem_1sdvo.Connect.gpfocus,
+.gamepadcontextmenu_contextMenuItem_1sdvo.BorrowApp.gpfocus,
+.gamepadcontextmenu_contextMenuItem_1sdvo.Download.gpfocus,
+.gamepadcontextmenu_contextMenuItem_1sdvo.Update.gpfocus,
+.gamepadcontextmenu_contextMenuItem_1sdvo.PreLoad.gpfocus,
+.gamepadcontextmenu_contextMenuItem_1sdvo.Pause.gpfocus,
+.gamepadcontextmenu_contextMenuItem_1sdvo.Stop.gpfocus,
+.gamepadcontextmenu_contextMenuItem_1sdvo.Cancel.gpfocus
+{
+    background: var(--ccm-itemfocus-bg);
+    color: var(--ccm-itemfocus-fg);
+}
+
+
+/* Item currently active */
+.gamepadcontextmenu_Selected_1PnET {
+    background: none !important;
+    color: var(--ccm-body-fg) !important;
+    font-weight: bold;
+}
+.gamepadcontextmenu_Selected_1PnET::before {
+    content: '';
+    height: 20px;
+    width: 20px;
+    -webkit-mask-image: url('/themes_custom/CapyMenu%20%28Context%20Menus%29/assets/checkmark.svg');
+    -webkit-mask-position: center;
+    -webkit-mask-repeat: no-repeat;
+    background: var(--ccm-body-fg);
+    margin-right: 12px;
+    
+}
+.gamepadcontextmenu_Selected_1PnET.gamepadcontextmenu_Focused_X813r {
+    background: var(--ccm-itemfocus-bg) !important;
+    color: var(--ccm-itemfocus-fg) !important;
+}
+.gamepadcontextmenu_Selected_1PnET.gamepadcontextmenu_Focused_X813r::before {
+    background: var(--ccm-itemfocus-fg) !important;
+}
+
+/* Nested item focus open */
+.gamepadcontextmenu_contextMenuItem_1sdvo.gamepadcontextmenu_SubMenu_1_tPN.gamepadcontextmenu_active_2Pk-x {
+    background: var(--ccm-itemfocus-bg);
+    color: var(--ccm-itemfocus-fg);
+    font-weight: bold;
+}
+.gamepadcontextmenu_contextMenuItem_1sdvo.gamepadcontextmenu_SubMenu_1_tPN.gamepadcontextmenu_active_2Pk-x .gamepadcontextmenu_Arrow_2EDBb svg {
+    fill: var(--ccm-itemfocus-fg);
+}
+
+.gamepadcontextmenu_contextMenuItem_1sdvo .dropdownlabel_DropDownLabelTitle_uDBZW {
+    color: var(--ccm-body-fg);
+}
+.gamepadcontextmenu_contextMenuItem_1sdvo .dropdownlabel_DropDownLabelDescription_1JPcb {
+    color: var(--ccm-body-fg);
+    opacity: .65;
+}
+
+.gamepadcontextmenu_contextMenuItem_1sdvo.gamepadcontextmenu_Focused_X813r.gpfocus .dropdownlabel_DropDownLabelTitle_uDBZW {
+    color: var(--ccm-itemfocus-fg);
+}
+.gamepadcontextmenu_contextMenuItem_1sdvo.gamepadcontextmenu_Focused_X813r.gpfocus .dropdownlabel_DropDownLabelDescription_1JPcb {
+    color: var(--ccm-itemfocus-fg);
+}
+
+/* Destructive buttons */
+.gamepadcontextmenu_contextMenuItem_1sdvo.gamepadcontextmenu_Destructive_3aIFv.gamepadcontextmenu_Focused_X813r.gpfocus {
+    background: var(--ccm-destructfocus-bg);
+    color: var(--ccm-destructfocus-fg);
+}

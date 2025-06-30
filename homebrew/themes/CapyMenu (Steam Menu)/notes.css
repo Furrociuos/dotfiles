@@ -1,0 +1,54 @@
+/* ---
+CapyMenu (Steam Menu)
+v2.1
+By Capybara / Kalyvara
+
+Notes
+--- */
+
+
+
+/* Notes list */
+.gamepadpagedsettings_PagedSettingsDialog_PageListColumn_2EZ3o {
+    background: rgba(var(--capySteam_mainBgColor), var(--capySteam_mainBgOpacity));
+    border-right: none;
+}
+
+/* Note item */
+.gamepadpagedsettings_PagedSettingsDialog_PageListItem_1ix7r {
+    color: var(--capySteam_mainTextColor);
+}
+
+/* Note item, selected */
+.gamepadpagedsettings_PagedSettingsDialog_PageListItem_1ix7r:focus {
+    background: rgba(var(--capySteam_bgHighlightColor), var(--capySteam_bgHighlightOpacity)) !important;
+      color: var(--capySteam_hl_mainTextColor);
+      
+}
+
+/* Note item, focused */
+.gamepadpagedsettings_PagedSettingsDialog_PageListItem_1ix7r.gamepadpagedsettings_Active_22LLB {
+    background: rgba(var(--capySteam_bgHighlightColor), var(--capySteam_bgHighlightOpacity));
+    color: var(--capySteam_hl_mainTextColor);
+}
+
+/* Notes container */
+.gamepadpagedsettings_PagedSettingDialog_ContentColumn_3JPle {
+    background: rgba(var(--capySteam_mainBgColor), var(--capySteam_mainBgOpacity));
+}
+
+/* Notes textarea */
+.gamenotes_EditorInput_3zWun {
+    background: #ffffff0e;
+    box-shadow: inset 0 0px 0px 2px #ffffff3f;
+}
+
+/* Notes textarea, user input */
+.gamenotes_NoteEditorArea_3WOF4 {
+    color: var(--capySteam_mainTextColor);
+}
+
+/* New note svg */
+svg.SVGIcon_Button.SVGIcon_TextNewNote {
+    fill: var(--capySteam_mainTextColor);
+}

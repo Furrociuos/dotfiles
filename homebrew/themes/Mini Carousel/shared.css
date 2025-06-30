@@ -1,0 +1,8 @@
+:root {
+    --scale-value: 0.7;
+}
+
+.basicgamecarousel_BasicGameCarousel_3MdH5 {
+    transform: scale(var(--scale-value));
+    width: calc(100vw / var(--scale-value)) !important;
+}

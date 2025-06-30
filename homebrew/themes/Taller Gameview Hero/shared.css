@@ -1,0 +1,18 @@
+:root {
+    --nitroshake-gv-play-bar-height: 80px;
+    --nitroshake-gv-info-bar-height: 138px;
+    --nitroshake-gv-full-bar-height: calc(var(--nitroshake-gv-play-bar-height) + var(--nitroshake-gv-info-bar-height));
+}
+
+/* Change where menu begins */
+.NZMJ6g2iVnFsOOp-lDmIP.NZMJ6g2iVnFsOOp-lDmIP.NZMJ6g2iVnFsOOp-lDmIP,
+.NZMJ6g2iVnFsOOp-lDmIP._1amMH3zqcKV3WYkLKNId8R,
+.NZMJ6g2iVnFsOOp-lDmIP._1ZNHIcPSbQl11wXtomcqgH {
+    min-height: calc(100vh - var(--nitroshake-gv-full-bar-height));
+    max-height: unset;
+}
+
+/* Resize logo */
+._3NBxSLAZLbbbnul8KfDFjw, ._2dzwXkCVAuZGFC-qKgo8XB {
+    max-height: var(--nitroshake-gv-logo-max-limit);
+}

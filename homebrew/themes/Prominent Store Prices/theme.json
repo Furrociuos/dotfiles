@@ -1,0 +1,12 @@
+{
+  "name": "Prominent Store Prices",
+  "author": "SuchMeme",
+  "version": "v1.1",
+  "manifest_version": 7,
+  "inject": {
+    "store.css": [
+      "~https://store.steampowered.com~"
+    ]
+  },
+  "id": "090c1cd9-0562-4b10-abf3-31f6d0676c4c"
+}

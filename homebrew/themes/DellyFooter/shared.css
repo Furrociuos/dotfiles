@@ -1,0 +1,31 @@
+:root {
+    --DELLY-blur: 5px;
+    --DELLY-footer-color: #00000030;
+}
+
+.footer_BasicFooter_3T1iF {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    box-sizing: border-box;
+    transition: border-radius 1s ease-in-out, height 1s ease-in-out;
+}
+
+.gamepadtabbedpage_Floating_3I3IM .gamepadtabbedpage_TabContentsScroll_1X4dt {
+    padding-bottom: var(--DELLY-footer-height);
+}
+
+.footericons_SizeMedium_3-w0R,
+.actionbuttonlegenditem_FooterGlyphSize_223Oc,
+.actionbuttonlegenditem_ActionButtonLabel_31Jnn {
+    transition: height 1s ease-in-out, font-size 1s ease-in-out;
+}
+
+.gamepadui_BasicHome_3LYP1 .ModalOverlayContent {
+    margin-bottom: var(--DELLY-footer-height);
+}
+
+.gamepaddialog_GamepadDialogContent_InnerWidth_3Xeyd,
+.gamepadpagedsettings_PagedSettingsDialog_PageList_3c_Jp {
+    padding-bottom: var(--DELLY-footer-height);
+}

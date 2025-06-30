@@ -1,0 +1,138 @@
+{
+  "name": "Avatar Customization Suite",
+  "author": "Charmics",
+  "version": "v3.0",
+  "manifest_version": 5,
+  "inject": {},
+  "dependencies": {},
+  "patches": {
+    "Options are [avatar] [status].": {
+      "type": "dropdown",
+      "default": "Default",
+      "values": {
+        "Default": {
+          "options/00-default.css": [
+            "SP",
+            "QuickAccess"
+          ]
+        },
+        "Normal Narrow": {
+          "options/10-normal-narrow.css": [
+            "SP",
+            "QuickAccess"
+          ]
+        },
+        "Normal Dot": {
+          "options/11-normal-dot.css": [
+            "SP",
+            "QuickAccess"
+          ]
+        },
+        "Normal Square": {
+          "options/12-normal-square.css": [
+            "SP",
+            "QuickAccess"
+          ]
+        },
+        "Normal Only": {
+          "options/13-normal-only.css": [
+            "SP",
+            "QuickAccess"
+          ]
+        },
+        "Frameless Edge": {
+          "options/20-frameless-edge.css": [
+            "SP",
+            "QuickAccess"
+          ]
+        },
+        "Frameless Dot": {
+          "options/21-frameless-dot.css": [
+            "SP",
+            "QuickAccess"
+          ]
+        },
+        "Frameless Square": {
+          "options/22-frameless-square.css": [
+            "SP",
+            "QuickAccess"
+          ]
+        },
+        "Frameless Only": {
+          "options/23-frameless-only.css": [
+            "SP",
+            "QuickAccess"
+          ]
+        },
+        "Rounded Edge": {
+          "options/30-rounded-edge.css": [
+            "SP",
+            "QuickAccess"
+          ]
+        },
+        "Rounded Dot": {
+          "options/31-rounded-dot.css": [
+            "SP",
+            "QuickAccess"
+          ]
+        },
+        "Rounded Square": {
+          "options/32-rounded-square.css": [
+            "SP",
+            "QuickAccess"
+          ]
+        },
+        "Rounded Only": {
+          "options/33-rounded-only.css": [
+            "SP",
+            "QuickAccess"
+          ]
+        },
+        "Round Edge": {
+          "options/40-round-edge.css": [
+            "SP",
+            "QuickAccess"
+          ]
+        },
+        "Round Dot": {
+          "options/41-round-dot.css": [
+            "SP",
+            "QuickAccess"
+          ]
+        },
+        "Round Square": {
+          "options/42-round-square.css": [
+            "SP",
+            "QuickAccess"
+          ]
+        },
+        "Round Only": {
+          "options/43-round-only.css": [
+            "SP",
+            "QuickAccess"
+          ]
+        },
+        "Just Dot": {
+          "options/50-just-dot.css": [
+            "SP",
+            "QuickAccess"
+          ]
+        },
+        "Just Square": {
+          "options/51-just-square.css": [
+            "SP",
+            "QuickAccess"
+          ]
+        },
+        "Nothing": {
+          "options/60-nothing.css": [
+            "SP",
+            "QuickAccess"
+          ]
+        }
+      },
+      "components": []
+    }
+  },
+  "id": "1f9f487c-d6ab-43d0-9e51-a953f9438d9c"
+}

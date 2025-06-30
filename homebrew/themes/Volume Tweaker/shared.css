@@ -1,0 +1,8 @@
+:root {
+    --volume-round-radius: none;
+}
+
+.audio_VolumePopin_2iUUM, .audio_VolumePopinHidden_1OwmL {
+    border-radius: var(--volume-radius-size);
+    width: var(--volume-width);
+}

@@ -1,0 +1,14 @@
+{
+  "name": "Game Header Text Stroke",
+  "author": "Met",
+  "version": "v1.0",
+  "manifest_version": 5,
+  "inject": {
+    "shared.css": [
+      "SP"
+    ]
+  },
+  "dependencies": {},
+  "patches": {},
+  "id": "68ab5a65-9ae2-42e2-aa4f-e9bee197ce89"
+}

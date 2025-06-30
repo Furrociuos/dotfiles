@@ -1,0 +1,10 @@
+.gamepadcontextmenu_contextMenuContents_sIgB- {
+    padding: 0 15px 0 15px;
+}
+
+.gamepadcontextmenu_contextMenuContents_sIgB->:first-child {
+    margin-top: 15px !important;
+}
+.gamepadcontextmenu_contextMenuContents_sIgB->:last-child {
+    margin-bottom: 15px !important;
+}

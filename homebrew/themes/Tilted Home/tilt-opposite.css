@@ -1,0 +1,41 @@
+/*Tilt 'View More' tile*/
+[data-id="GoToLibrary"] {
+    transform: skew(var(--ren-tilt-angle));
+    transition: transform 0.4s;
+}
+
+/*Tilt,scale and offset focused 'View More' tile*/
+[data-id="GoToLibrary"].gpfocuswithin  {
+     transform: scale(1.05);
+}
+
+/*Tilt left game portraits*/
+.gamepadhome_RecentSection_39tNv
+.basicgamecarousel_BasicGameCarouselItemMediaContainer_1HIFN > div:first-child
+{
+    transform:skew(calc(-1*var(--ren-tilt-angle)));
+	transition-duration: 0.4s;
+}
+
+/*Tilt right game portraits, also while tabbed out*/
+.gamepadhome_RecentSection_39tNv 
+.basicgamecarousel_BasicGameCarousel_3MdH5
+.ReactVirtualized__Grid__innerScrollContainer > div.gpfocuswithin ~ div
+.basicgamecarousel_BasicGameCarouselItemMediaContainer_1HIFN > div:first-child
+,
+.gamepadhome_RecentSection_39tNv 
+.basicgamecarousel_BasicGameCarousel_3MdH5
+.ReactVirtualized__Grid__innerScrollContainer > div[tabindex]  ~ div 
+.basicgamecarousel_BasicGameCarouselItemMediaContainer_1HIFN > div:first-child
+{
+    transform: skew(var(--ren-tilt-angle));
+}
+
+/*Scale focused tile, also while tabbed out*/
+.gamepadhome_RecentSection_39tNv 
+.basicgamecarousel_BasicGameCarouselItemMediaContainer_1HIFN.gpfocuswithin > div:first-child,
+.gamepadhome_RecentSection_39tNv 
+.basicgamecarousel_BasicGameCarouselItemMediaContainer_1HIFN[tabindex] > div:first-child 
+{
+    transform: scale(1.02);
+}

@@ -1,0 +1,92 @@
+{
+    "plugin_use_count": 43,
+    "motd_last_fetched": 1751118486,
+    "nonsteam_3358440": {
+        "id": 5423841,
+        "name": "Persona 3 Reload",
+        "verified": true,
+        "types": [
+            "steam"
+        ],
+        "release_date": 1706745600
+    },
+    "filters_grid_p": {
+        "styles": [
+            "alternate",
+            "white_logo",
+            "no_logo",
+            "blurred",
+            "material"
+        ],
+        "dimensions": [
+            "600x900",
+            "342x482",
+            "660x930"
+        ],
+        "mimes": [
+            "image/png",
+            "image/jpeg",
+            "image/webp"
+        ],
+        "animated": true,
+        "_static": true,
+        "adult": false,
+        "humor": true,
+        "epilepsy": true,
+        "untagged": true
+    },
+    "nonsteam_3094026866": {
+        "id": 5471414,
+        "name": "Citron (Emulator)",
+        "verified": true,
+        "types": [],
+        "release_date": 1729641600
+    },
+    "filters_grid_l": {
+        "styles": [
+            "alternate",
+            "white_logo",
+            "no_logo",
+            "blurred",
+            "material"
+        ],
+        "dimensions": [
+            "460x215",
+            "920x430"
+        ],
+        "mimes": [
+            "image/png",
+            "image/jpeg",
+            "image/webp"
+        ],
+        "animated": true,
+        "_static": true,
+        "adult": false,
+        "humor": true,
+        "epilepsy": true,
+        "untagged": true
+    },
+    "nonsteam_3395469876": {
+        "id": 5266059,
+        "name": "Ratchet & Clank: Rift Apart",
+        "verified": true,
+        "types": [
+            "steam"
+        ],
+        "release_date": 1623369600
+    },
+    "nonsteam_2526222502": {
+        "id": 5245878,
+        "name": "yuzu (Emulator)",
+        "verified": true,
+        "types": [],
+        "release_date": 1515888000
+    },
+    "nonsteam_1853840": {
+        "id": 5245878,
+        "name": "yuzu (Emulator)",
+        "verified": true,
+        "types": [],
+        "release_date": 1515888000
+    }
+}

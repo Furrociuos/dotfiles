@@ -1,0 +1,4 @@
+.gamepadui_GamepadDialogOverlay_34Euf .ModalOverlayBackground {
+    background-color: var(--ccm-bgfilter-color);
+    backdrop-filter: blur(4px);
+}

@@ -1,0 +1,33 @@
+{
+  "name": "DeckyBattery",
+  "author": "Nox (GoDev)",
+  "version": "v1.1",
+  "manifest_version": 4,
+  "patches": {
+    "Enable": {
+      "type": "none",
+      "values": {
+        "_": {
+          "shared.css": [
+            "SP",
+            "QuickAccess"
+          ]
+        }
+      },
+      "components": [
+        {
+          "name": "Battery Color",
+          "type": "color-picker",
+          "on": "_",
+          "default": "#59bf40",
+          "css_variable": "db-battery-color",
+          "tabs": [
+            "SP",
+            "QuickAccess"
+          ]
+        }
+      ]
+    }
+  },
+  "id": "70cac703-6df2-44f3-9482-82dd56ab2041"
+}

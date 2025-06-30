@@ -1,0 +1,11 @@
+/*Declare variables*/
+:root {
+	
+	--g1-font-color: #fff;
+}
+
+/*Set font color*/
+.basicgamecarousel_BasicGameCarouselItem_3YYQ9 .basicgamecarousel_TextBoxCarouselContents_3bvCH {
+	
+	color: var(--g1-font-color);
+}

@@ -1,0 +1,24 @@
+:root {
+	--DELLY-footer-height: 30px;
+	--DELLY-round-corners: 30px 30px 0 0;
+	--DELLY-font-size: 10px;
+	--DELLY-image-size: 15px;
+	--DELLY-effect-christmas-trees: "🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄";
+}
+
+.footer_BasicFooter_3T1iF {
+	min-height: var(--DELLY-footer-height);
+}
+
+.footer_FooterLegend_2JJDH {
+	gap: 3px 14px;
+}
+
+.footericons_SizeMedium_3-w0R,
+.actionbuttonlegenditem_FooterGlyphSize_223Oc {
+	height: var(--DELLY-image-size);
+}
+
+.actionbuttonlegenditem_ActionButtonLabel_31Jnn {
+	font-size: var(--DELLY-font-size) !important;
+}

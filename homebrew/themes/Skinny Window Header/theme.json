@@ -1,0 +1,26 @@
+{
+  "name": "Skinny Window Header",
+  "version": "v1.2.2",
+  "author": "SuchMeme",
+  "manifest_version": 7,
+  "tabs": {
+    "default": [
+      "Steam"
+    ]
+  },
+  "inject": {
+    "steam.css": []
+  },
+  "patches": {
+    "Use Custom Icons": {
+      "type": "checkbox",
+      "values": {
+        "Yes": {
+          "custom_icons.css": []
+        },
+        "No": {}
+      }
+    }
+  },
+  "id": "1eb4e613-6f47-452a-b060-87ef2c426d40"
+}

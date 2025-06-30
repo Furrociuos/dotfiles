@@ -1,0 +1,53 @@
+:root {
+    --ccm-gradient: ccm_anim_gradient 3s ease infinite forwards;
+}
+
+@keyframes ccm_anim_gradient {
+    0% {
+      background-position: 0% 50%;
+      background-size: 300% 300%;
+    }
+    50% {
+      background-position: 100% 50%;
+      background-size: 300% 300%;
+    }
+    100% {
+      background-position: 0% 50%;
+      background-size: 300% 300%;
+    }
+}
+
+.gamepadcontextmenu_contextMenuItem_1sdvo.gamepadcontextmenu_Focused_X813r {
+    animation: var(--ccm-gradient);
+}
+.gamepadcontextmenu_Selected_1PnET.gamepadcontextmenu_Focused_X813r {
+    animation: var(--ccm-gradient) !important; /* doesn't work for whatever reason */
+}
+.gamepadcontextmenu_contextMenuItem_1sdvo.gamepadcontextmenu_SubMenu_1_tPN.gamepadcontextmenu_active_2Pk-x {
+    animation: var(--ccm-gradient);
+}
+.gamepadcontextmenu_contextMenuItem_1sdvo.Stream.gpfocus,
+.gamepadcontextmenu_contextMenuItem_1sdvo.Connect.gpfocus,
+.gamepadcontextmenu_contextMenuItem_1sdvo.Launch.gpfocus,
+.gamepadcontextmenu_contextMenuItem_1sdvo.PlayMusic.gpfocus,
+.gamepadcontextmenu_contextMenuItem_1sdvo.Play.gpfocus,
+.gamepadcontextmenu_contextMenuItem_1sdvo.Resume.gpfocus,
+.gamepadcontextmenu_contextMenuItem_1sdvo.BorrowApp.gpfocus,
+.gamepadcontextmenu_contextMenuItem_1sdvo.Download.gpfocus,
+.gamepadcontextmenu_contextMenuItem_1sdvo.Update.gpfocus,
+.gamepadcontextmenu_contextMenuItem_1sdvo.PreLoad.gpfocus,
+.gamepadcontextmenu_contextMenuItem_1sdvo.Install.gpfocus,
+.gamepadcontextmenu_contextMenuItem_1sdvo.Pause.gpfocus,
+.gamepadcontextmenu_contextMenuItem_1sdvo.Stop.gpfocus,
+.gamepadcontextmenu_contextMenuItem_1sdvo.Cancel.gpfocus {
+    animation: var(--ccm-gradient);
+}
+
+.gamepadcontextmenu_contextMenuItem_1sdvo.gamepadcontextmenu_Destructive_3aIFv.gamepadcontextmenu_Focused_X813r.gpfocus {
+    animation: var(--ccm-gradient);
+}
+
+/* Gameview */
+.BasicUI .appactionbutton_Green_3cI5T .appactionbutton_ButtonChild_2AzIX.Focusable:focus {
+    animation: var(--ccm-gradient);
+}

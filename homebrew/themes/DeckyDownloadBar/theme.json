@@ -1,0 +1,14 @@
+{
+  "name": "DeckyDownloadBar",
+  "author": "Nox (GoDev)",
+  "version": "v1.0",
+  "manifest_version": 4,
+  "inject": {
+    "shared.css": [
+      "SP"
+    ]
+  },
+  "dependencies": {},
+  "patches": {},
+  "id": "eec4b9fa-a601-40b5-afe4-30608cc89c5b"
+}

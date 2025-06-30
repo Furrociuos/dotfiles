@@ -1,0 +1,13 @@
+{
+  "name": "Overlay Colapse Fix",
+  "author": "Niko",
+  "version": "v1.0",
+  "manifest_version": 9,
+  "inject": {
+    "shared.css": [
+      "bigpicture",
+      "MainMenu"
+    ]
+  },
+  "id": "5144c4ad-926a-42a0-aeb6-cc8056ab7518"
+}

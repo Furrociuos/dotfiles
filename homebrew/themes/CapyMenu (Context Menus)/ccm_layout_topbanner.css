@@ -1,0 +1,23 @@
+/* ---
+CapyMenu CM v2.0
+Layout - Top Banner
+--- */
+
+/* Global container */
+.gamepadcontextmenu_BasicContextMenuModal_2xS2_ {
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+/* Title */
+.gamepadcontextmenu_BasicContextMenuHeader_2Jp8B {
+    width: 100vw;
+    align-self: center;
+    border-radius: 0;
+}
+
+/* Context Menu containers */
+.gamepadcontextmenu_BasicContextMenuContainer_2ZDB6 {
+    margin: auto;
+    width: 100%;
+}

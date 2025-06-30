@@ -1,0 +1,18 @@
+.footer_BasicFooter_3T1iF {
+	background: #ba0c0c;
+	border-bottom: calc(var(--DELLY-footer-height)/10) solid #003E1E;
+	border-top: calc(var(--DELLY-footer-height)/8) solid #ffffff;
+}
+
+.footer_FooterLegend_2JJDH:after {
+	position: absolute;
+	content: var(--DELLY-effect-christmas-trees);
+	opacity: .6;
+	left: 50%;
+	color: #fff;
+	transform: translateX(-50%);
+	font-size: var(--DELLY-font-size, inherit);
+	width: 100%;
+	text-align: center;
+	z-index: -1;
+}

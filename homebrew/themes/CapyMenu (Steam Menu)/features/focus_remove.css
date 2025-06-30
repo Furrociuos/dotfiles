@@ -1,0 +1,22 @@
+/* Main panel */
+.mainmenu_Item_2w9Tp.gpfocus {
+  animation: none;
+  transform: none;
+}
+
+/* Running app menu */
+.mainmenuapprunning_NavigationMenuItem_1G0K4.gpfocus.gpfocuswithin {
+  animation: none;
+  transform: none;
+}
+.mainmenuapprunning_NavigationMenuItem_1G0K4.mainmenuapprunning_Active_1jG8i.gpfocus.gpfocuswithin {
+  transform: scale(1.1);
+}
+
+/* Notes */
+.gamepadpagedsettings_PagedSettingsDialog_PageListItem_1ix7r:focus {
+  transform: scale(1.0);
+}
+.gamepadpagedsettings_PagedSettingsDialog_PageListItem_1ix7r.gamepadpagedsettings_Active_22LLB {
+  transform: none;
+}

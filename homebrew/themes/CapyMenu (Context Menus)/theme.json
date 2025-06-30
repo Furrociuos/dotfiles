@@ -1,0 +1,741 @@
+{
+  "name": "CapyMenu (Context Menus)",
+  "author": "Capybara",
+  "version": "v2.0",
+  "manifest_version": 9,
+  "tabs": {
+    "default": [
+      "bigpicture"
+    ]
+  },
+  "inject": {
+    "ccm_common.css": []
+  },
+  "patches": {
+    "Edges": {
+      "type": "slider",
+      "default": "Round",
+      "values": {
+        "Sharp": {},
+        "Sharp w/ Padding": {
+          "ccm_edges_padding.css": []
+        },
+        "Round": {
+          "ccm_edges_round.css": []
+        }
+      }
+    },
+    "Size": {
+      "type": "slider",
+      "default": "Normal",
+      "values": {
+        "Normal": {},
+        "Wide": {
+          "ccm_size_wide.css": []
+        }
+      }
+    },
+    "Layout": {
+      "type": "dropdown",
+      "default": "Top Banner Title",
+      "values": {
+        "Default": {},
+        "Top Banner Title": {
+          "ccm_layout_topbanner.css": []
+        },
+        "Bottom Stacked + Banner Title": {
+          "ccm_layout_allbottom.css": []
+        },
+        "Left-Hand Side": {
+          "ccm_layout_left.css": []
+        },
+        "Bottom Left": {
+          "ccm_layout_bottomleft.css": []
+        },
+        "Left-Hand Side + Banner Title": {
+          "ccm_layout_left_banner.css": []
+        },
+        "Top Left + Banner Title": {
+          "ccm_layout_topleft_banner.css": []
+        }
+      }
+    },
+    "Menu Background": {
+      "type": "dropdown",
+      "default": "OLED Black",
+      "values": {
+        "∅ None": {
+          "--ccm-body-bg": [
+            "#00000000"
+          ]
+        },
+        "OLED Black": {
+          "--ccm-body-bg": [
+            "#000"
+          ]
+        },
+        "Dark Gray": {
+          "--ccm-body-bg": [
+            "#141414"
+          ]
+        },
+        "Bright Gray": {
+          "--ccm-body-bg": [
+            "#bdbdbd"
+          ]
+        },
+        "Transparent Black": {
+          "--ccm-body-bg": [
+            "#00000080"
+          ]
+        },
+        "Transparent White": {
+          "--ccm-body-bg": [
+            "#ffffff80"
+          ]
+        },
+        "Marine Blue": {
+          "--ccm-body-bg": [
+            "#0d1226"
+          ]
+        },
+        "Earthy Brown": {
+          "--ccm-body-bg": [
+            "#241e20"
+          ]
+        },
+        "Wine Red": {
+          "--ccm-body-bg": [
+            "#400b1e"
+          ]
+        },
+        "Beige": {
+          "--ccm-body-bg": [
+            "#b5ada1"
+          ]
+        },
+        "Aubergine": {
+          "--ccm-body-bg": [
+            "#2a0f30"
+          ]
+        },
+        "Orange": {
+          "--ccm-body-bg": [
+            "#9c3b1e"
+          ]
+        },
+        "⚙️ Gradient...": {
+          "ccm_body_gradient.css": []
+        }
+      },
+      "components": [
+        {
+          "name": "Gradient Color 1",
+          "type": "color-picker",
+          "on": "⚙️ Gradient...",
+          "default": "#34c58e",
+          "css_variable": "ccm-body-bg-grad1",
+          "tabs": []
+        },
+        {
+          "name": "Gradient Color 2",
+          "type": "color-picker",
+          "on": "⚙️ Gradient...",
+          "default": "#2e5f80",
+          "css_variable": "ccm-body-bg-grad2",
+          "tabs": []
+        }
+      ]
+    },
+    "Menu Foreground": {
+      "type": "dropdown",
+      "default": "White",
+      "values": {
+        "White": {
+          "--ccm-body-fg": [
+            "#fff"
+          ]
+        },
+        "Black": {
+          "--ccm-body-fg": [
+            "#000"
+          ]
+        },
+        "⚙️ Custom...": {}
+      },
+      "components": [
+        {
+          "name": "Color Picker",
+          "type": "color-picker",
+          "on": "⚙️ Custom...",
+          "default": "#eee",
+          "css_variable": "ccm-body-fg",
+          "tabs": []
+        }
+      ]
+    },
+    "Item Focus Background": {
+      "type": "dropdown",
+      "default": "White",
+      "values": {
+        "Bright Gray": {
+          "--ccm-itemfocus-bg": [
+            "#eee"
+          ]
+        },
+        "White": {
+          "--ccm-itemfocus-bg": [
+            "#fff"
+          ]
+        },
+        "Dark Gray": {
+          "--ccm-itemfocus-bg": [
+            "#141414"
+          ]
+        },
+        "Pale Yellow": {
+          "--ccm-itemfocus-bg": [
+            "#b8af65"
+          ]
+        },
+        "Leaf Green": {
+          "--ccm-itemfocus-bg": [
+            "#62a35b"
+          ]
+        },
+        "Pastel Pink": {
+          "--ccm-itemfocus-bg": [
+            "#dbb4c4"
+          ]
+        },
+        "Wine Red": {
+          "--ccm-itemfocus-bg": [
+            "#400b1e"
+          ]
+        },
+        "Aquamarine Blue": {
+          "--ccm-itemfocus-bg": [
+            "#52bf9d"
+          ]
+        },
+        "Orange": {
+          "--ccm-itemfocus-bg": [
+            "#bf7747"
+          ]
+        },
+        "⚙️ Gradient...": {
+          "ccm_item_gradient.css": []
+        }
+      },
+      "components": [
+        {
+          "name": "Gradient Color 1",
+          "type": "color-picker",
+          "on": "⚙️ Gradient...",
+          "default": "#FF0000",
+          "css_variable": "ccm-itemfocus-bg-grad1",
+          "tabs": []
+        },
+        {
+          "name": "Gradient Color 2",
+          "type": "color-picker",
+          "on": "⚙️ Gradient...",
+          "default": "#4186b4",
+          "css_variable": "ccm-itemfocus-bg-grad2",
+          "tabs": []
+        },
+        {
+          "name": "Gradient Color 3",
+          "type": "color-picker",
+          "on": "⚙️ Gradient...",
+          "default": "#b4417a",
+          "css_variable": "ccm-itemfocus-bg-grad3",
+          "tabs": []
+        }
+      ]
+    },
+    "Item Focus Foreground": {
+      "type": "dropdown",
+      "default": "Black",
+      "values": {
+        "White": {
+          "--ccm-itemfocus-fg": [
+            "#fff"
+          ]
+        },
+        "Black": {
+          "--ccm-itemfocus-fg": [
+            "#000"
+          ]
+        },
+        "⚙️ Custom...": {}
+      },
+      "components": [
+        {
+          "name": "Color Picker",
+          "type": "color-picker",
+          "on": "⚙️ Custom...",
+          "default": "#eee",
+          "css_variable": "ccm-itemfocus-fg",
+          "tabs": []
+        }
+      ]
+    },
+    "Title Background": {
+      "type": "dropdown",
+      "default": "Transparent White",
+      "values": {
+        "∅ None": {
+          "--ccm-title-bg": [
+            "#00000000"
+          ]
+        },
+        "OLED Black": {
+          "--ccm-title-bg": [
+            "#000"
+          ]
+        },
+        "Dark Gray": {
+          "--ccm-title-bg": [
+            "#141414"
+          ]
+        },
+        "Bright Gray": {
+          "--ccm-title-bg": [
+            "#bdbdbd"
+          ]
+        },
+        "Transparent Black": {
+          "--ccm-title-bg": [
+            "#00000066"
+          ]
+        },
+        "Transparent White": {
+          "--ccm-title-bg": [
+            "#ffffff66"
+          ]
+        },
+        "Marine Blue": {
+          "--ccm-title-bg": [
+            "#0d1226"
+          ]
+        },
+        "Earthy Brown": {
+          "--ccm-title-bg": [
+            "#241e20"
+          ]
+        },
+        "Wine Red": {
+          "--ccm-title-bg": [
+            "#400b1e"
+          ]
+        },
+        "Beige": {
+          "--ccm-title-bg": [
+            "#b5ada1"
+          ]
+        },
+        "Aubergine": {
+          "--ccm-title-bg": [
+            "#2a0f30"
+          ]
+        },
+        "Orange": {
+          "--ccm-title-bg": [
+            "#9c3b1e"
+          ]
+        },
+        "⚙️ Gradient...": {
+          "ccm_title_gradient.css": []
+        }
+      },
+      "components": [
+        {
+          "name": "Gradient Color 1",
+          "type": "color-picker",
+          "on": "⚙️ Gradient...",
+          "default": "#34c58e",
+          "css_variable": "ccm-title-bg-grad1",
+          "tabs": []
+        },
+        {
+          "name": "Gradient Color 2",
+          "type": "color-picker",
+          "on": "⚙️ Gradient...",
+          "default": "#2e5f80",
+          "css_variable": "ccm-title-bg-grad2",
+          "tabs": []
+        }
+      ]
+    },
+    "Title Foreground": {
+      "type": "dropdown",
+      "default": "White",
+      "values": {
+        "White": {
+          "--ccm-title-fg": [
+            "#fff"
+          ]
+        },
+        "Black": {
+          "--ccm-title-fg": [
+            "#000"
+          ]
+        },
+        "⚙️ Custom...": {}
+      },
+      "components": [
+        {
+          "name": "Color Picker",
+          "type": "color-picker",
+          "on": "⚙️ Custom...",
+          "default": "#eee",
+          "css_variable": "ccm-title-fg",
+          "tabs": []
+        }
+      ]
+    },
+    "Modal Background (Affects all modals)": {
+      "type": "dropdown",
+      "default": "SteamOS Default",
+      "values": {
+        "∅ None": {
+          "ccm_opt_bgmodal_none.css": []
+        },
+        "SteamOS Default": {},
+        "Colored Blur": {
+          "ccm_opt_bgmodal_color.css": []
+        },
+        "Gradient Blur": {
+          "ccm_opt_bgmodal_gradient.css": []
+        },
+        "Image": {
+          "ccm_opt_bgmodal_image.css": []
+        }
+      },
+      "components": [
+        {
+          "name": "Color Picker",
+          "type": "color-picker",
+          "on": "Colored Blur",
+          "default": "#34e8eb80",
+          "css_variable": "ccm-bgfilter-color",
+          "tabs": []
+        },
+        {
+          "name": "Gradient Color 1",
+          "type": "color-picker",
+          "on": "Gradient Blur",
+          "default": "#34c58e",
+          "css_variable": "ccm-bgfilter-grad1",
+          "tabs": []
+        },
+        {
+          "name": "Gradient Color 2",
+          "type": "color-picker",
+          "on": "Gradient Blur",
+          "default": "#2e5f80",
+          "css_variable": "ccm-bgfilter-grad2",
+          "tabs": []
+        },
+        {
+          "name": "Image Picker",
+          "type": "image-picker",
+          "on": "Image",
+          "default": "",
+          "css_variable": "ccm-bgfilter-image",
+          "tabs": []
+        }
+      ]
+    },
+    "App: Play Button Focus Background": {
+      "type": "dropdown",
+      "default": "Same as Item Focus",
+      "values": {
+        "Same as Item Focus": {},
+        "Bright Gray": {
+          "--ccm-playfocus-bg": [
+            "#eee"
+          ]
+        },
+        "White": {
+          "--ccm-playfocus-bg": [
+            "#fff"
+          ]
+        },
+        "Dark Gray": {
+          "--ccm-playfocus-bg": [
+            "#141414"
+          ]
+        },
+        "Pale Yellow": {
+          "--ccm-playfocus-bg": [
+            "#b8af65"
+          ]
+        },
+        "Leaf Green": {
+          "--ccm-playfocus-bg": [
+            "#62a35b"
+          ]
+        },
+        "Pastel Pink": {
+          "--ccm-playfocus-bg": [
+            "#dbb4c4"
+          ]
+        },
+        "Wine Red": {
+          "--ccm-playfocus-bg": [
+            "#400b1e"
+          ]
+        },
+        "Aquamarine Blue": {
+          "--ccm-playfocus-bg": [
+            "#52bf9d"
+          ]
+        },
+        "Orange": {
+          "--ccm-playfocus-bg": [
+            "#bf7747"
+          ]
+        },
+        "⚙️ Gradient...": {
+          "ccm_play_gradient.css": []
+        }
+      },
+      "components": [
+        {
+          "name": "Gradient Color 1",
+          "type": "color-picker",
+          "on": "⚙️ Gradient...",
+          "default": "#FF0000",
+          "css_variable": "ccm-playfocus-bg-grad1",
+          "tabs": []
+        },
+        {
+          "name": "Gradient Color 2",
+          "type": "color-picker",
+          "on": "⚙️ Gradient...",
+          "default": "#4186b4",
+          "css_variable": "ccm-playfocus-bg-grad2",
+          "tabs": []
+        },
+        {
+          "name": "Gradient Color 3",
+          "type": "color-picker",
+          "on": "⚙️ Gradient...",
+          "default": "#b4417a",
+          "css_variable": "ccm-playfocus-bg-grad3",
+          "tabs": []
+        }
+      ]
+    },
+    "App: Play Button Focus Foreground": {
+      "type": "dropdown",
+      "default": "Same as Item Focus",
+      "values": {
+        "Same as Item Focus": {},
+        "White": {
+          "--ccm-playfocus-fg": [
+            "#fff"
+          ]
+        },
+        "Black": {
+          "--ccm-playfocus-fg": [
+            "#000"
+          ]
+        },
+        "⚙️ Custom...": {}
+      },
+      "components": [
+        {
+          "name": "Color Picker",
+          "type": "color-picker",
+          "on": "⚙️ Custom...",
+          "default": "#eee",
+          "css_variable": "ccm-playfocus-fg",
+          "tabs": []
+        }
+      ]
+    },
+    "Power: Destruct. Button Focus Background": {
+      "type": "dropdown",
+      "default": "Same as Item Focus",
+      "values": {
+        "Same as Item Focus": {},
+        "Bright Gray": {
+          "--ccm-destructfocus-bg": [
+            "#eee"
+          ]
+        },
+        "White": {
+          "--ccm-destructfocus-bg": [
+            "#fff"
+          ]
+        },
+        "Dark Gray": {
+          "--ccm-destructfocus-bg": [
+            "#141414"
+          ]
+        },
+        "Pale Yellow": {
+          "--ccm-destructfocus-bg": [
+            "#b8af65"
+          ]
+        },
+        "Leaf Green": {
+          "--ccm-destructfocus-bg": [
+            "#62a35b"
+          ]
+        },
+        "Pastel Pink": {
+          "--ccm-destructfocus-bg": [
+            "#dbb4c4"
+          ]
+        },
+        "Wine Red": {
+          "--ccm-destructfocus-bg": [
+            "#400b1e"
+          ]
+        },
+        "Aquamarine Blue": {
+          "--ccm-destructfocus-bg": [
+            "#52bf9d"
+          ]
+        },
+        "Orange": {
+          "--ccm-destructfocus-bg": [
+            "#bf7747"
+          ]
+        },
+        "⚙️ Gradient...": {
+          "ccm_destruct_gradient.css": []
+        }
+      },
+      "components": [
+        {
+          "name": "Gradient Color 1",
+          "type": "color-picker",
+          "on": "⚙️ Gradient...",
+          "default": "#FF0000",
+          "css_variable": "ccm-destructfocus-bg-grad1",
+          "tabs": []
+        },
+        {
+          "name": "Gradient Color 2",
+          "type": "color-picker",
+          "on": "⚙️ Gradient...",
+          "default": "#4186b4",
+          "css_variable": "ccm-destructfocus-bg-grad2",
+          "tabs": []
+        },
+        {
+          "name": "Gradient Color 3",
+          "type": "color-picker",
+          "on": "⚙️ Gradient...",
+          "default": "#b4417a",
+          "css_variable": "ccm-destructfocus-bg-grad3",
+          "tabs": []
+        }
+      ]
+    },
+    "Power: Destruct. Button Focus Foreground": {
+      "type": "dropdown",
+      "default": "Same as Item Focus",
+      "values": {
+        "Same as Item Focus": {},
+        "White": {
+          "--ccm-destructfocus-fg": [
+            "#fff"
+          ]
+        },
+        "Black": {
+          "--ccm-destructfocus-fg": [
+            "#000"
+          ]
+        },
+        "⚙️ Custom...": {}
+      },
+      "components": [
+        {
+          "name": "Color Picker",
+          "type": "color-picker",
+          "on": "⚙️ Custom...",
+          "default": "#eee",
+          "css_variable": "ccm-destructfocus-fg",
+          "tabs": []
+        }
+      ]
+    },
+    "Grow label on focus": {
+      "type": "checkbox",
+      "default": "No",
+      "values": {
+        "Yes": {
+          "ccm_opt_growlabel.css": []
+        },
+        "No": {}
+      }
+    },
+    "Animate label gradient": {
+      "type": "checkbox",
+      "default": "Yes",
+      "values": {
+        "Yes": {
+          "ccm_opt_gradient.css": []
+        },
+        "No": {}
+      }
+    },
+    "Center labels": {
+      "type": "checkbox",
+      "default": "No",
+      "values": {
+        "Yes": {
+          "ccm_opt_centerlabel.css": []
+        },
+        "No": {}
+      }
+    },
+    "Remove label separators": {
+      "type": "checkbox",
+      "default": "No",
+      "values": {
+        "Yes": {
+          "ccm_opt_separators.css": []
+        },
+        "No": {}
+      }
+    },
+    "Blur title (Trsp solid colors only. Recommended w/ Modal Bg Img.)": {
+      "type": "checkbox",
+      "default": "Yes",
+      "values": {
+        "Yes": {
+          "ccm_opt_blurtitle.css": []
+        },
+        "No": {}
+      }
+    },
+    "Modal Background fade-in": {
+      "type": "checkbox",
+      "default": "Yes",
+      "values": {
+        "Yes": {
+          "ccm_opt_modalfade.css": []
+        },
+        "No": {}
+      }
+    },
+    "App Menu: Apply Play Button styling to Gameview": {
+      "type": "checkbox",
+      "default": "Yes",
+      "values": {
+        "Yes": {
+          "ccm_opt_gameview.css": []
+        },
+        "No": {}
+      }
+    }
+  },
+  "id": "477cdaf5-a81d-407c-b14c-ab7b937887c3"
+}

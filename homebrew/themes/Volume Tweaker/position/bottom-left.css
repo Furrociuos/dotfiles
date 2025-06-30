@@ -1,0 +1,14 @@
+:root {
+    --volume-preview-translate: 0%;
+}
+
+.audio_VolumePopinHidden_1OwmL, .audio_VolumePopin_2iUUM {
+    top: auto;
+    left: 8px;
+    right: auto;
+    bottom: 8px;
+}
+
+.audio_VolumePopinHidden_1OwmL {
+    transform: translateY(150%);
+}

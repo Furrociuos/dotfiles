@@ -1,0 +1,11 @@
+.gamepadcontextmenu_contextMenuItem_1sdvo,
+.gamepadcontextmenu_contextMenuItem_1sdvo .dropdownlabel_DropDownLabelTitle_uDBZW {
+    transition: font-size .05s ease;
+}
+.gamepadcontextmenu_contextMenuItem_1sdvo.gpfocus,
+.gamepadcontextmenu_contextMenuItem_1sdvo.gpfocus .dropdownlabel_DropDownLabelTitle_uDBZW {
+    font-size: 18px;
+}
+.gamepadcontextmenu_contextMenuItem_1sdvo.gamepadcontextmenu_SubMenu_1_tPN.gamepadcontextmenu_active_2Pk-x {
+    font-size: 18px;
+}

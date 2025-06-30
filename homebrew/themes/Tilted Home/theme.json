@@ -1,0 +1,84 @@
+{
+  "name": "Tilted Home",
+  "author": "TheRensei",
+  "version": "v1.3",
+  "manifest_version": 5,
+  "inject": {
+    "shared.css": [
+      "SP"
+    ]
+  },
+  "dependencies": {},
+  "patches": {
+    "Angle": {
+      "type": "slider",
+      "default": "-5",
+      "values": {
+        "-20": {
+          "tilt_angle/-20deg.css": [
+            "SP"
+          ]
+        },
+        "-15": {
+          "tilt_angle/-15deg.css": [
+            "SP"
+          ]
+        },
+        "-10": {
+          "tilt_angle/-10deg.css": [
+            "SP"
+          ]
+        },
+        "-5": {
+          "tilt_angle/-5deg.css": [
+            "SP"
+          ]
+        },
+        "5": {
+          "tilt_angle/5deg.css": [
+            "SP"
+          ]
+        },
+        "10": {
+          "tilt_angle/10deg.css": [
+            "SP"
+          ]
+        },
+        "15": {
+          "tilt_angle/15deg.css": [
+            "SP"
+          ]
+        },
+        "20": {
+          "tilt_angle/20deg.css": [
+            "SP"
+          ]
+        }
+      },
+      "components": []
+    },
+    "Tilt Method": {
+      "type": "dropdown",
+      "default": "One Way",
+      "values": {
+        "One Way": {
+          "tilt-oneway.css": [
+            "SP"
+          ]
+        },
+        "Opposites": {
+          "tilt-opposite.css": [
+            "SP"
+          ]
+        },
+        "3D": {
+          "tilt-3d.css": [
+            "SP"
+          ]
+        }
+      },
+      "components": []
+    }
+  },
+  "id": "231c969d-b16f-41a0-98a1-cec8aeb557ba"
+}
