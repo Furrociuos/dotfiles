@@ -5,8 +5,17 @@
         "height": 45,
         "start": [
         {
+         "type": "music",
+         "format": "󰥠",
+         "show_status_icon": false,
+          "icons": {
+            "play": "",
+            "pause": ""
+          }
+        },
+        {
           "type": "clock",
-            "format": "  %I:%M %p",
+            "format": " %I:%M %p",
             "format_popup": "  %a, %d %b"
         },
         {
@@ -38,7 +47,26 @@
           }
         },
         {
-          "type": "network_manager"
+          "type": "custom",
+          "bar": [
+            {
+            "on_click": "!pkill rofi || rofi-bluetooth -config '~/.config/rofi/menus.rasi'",
+            "label": "{{1000:rofi-bluetooth --status}}",
+            "name": "bluetooth",
+            "type": "button"
+            }
+          ]
+        },
+        {
+          "type": "custom",
+          "bar": [
+            {
+            "on_click": "!pkill rofi || rofi -config '~/.config/rofi/menus.rasi' -show wifi -modi wifi:iwdrofimenu",
+            "label": "{{1000:~/.config/ironbar/scripts/network.sh}}",
+            "name": "network",
+            "type": "button"
+            }
+          ]
         },
         {
           "type": "upower",
@@ -64,7 +92,7 @@
       "start": [
         {
           "type": "clock",
-            "format": "  %I:%M %p",
+            "format": " %I:%M %p",
             "format_popup": "  %a, %d %b"
         }
       ],

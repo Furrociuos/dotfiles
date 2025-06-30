@@ -249,8 +249,8 @@ binds {
 	  Super+E { spawn "nautilus"; }
     Super+N { spawn "sh" "-c" "curd -rofi -image-preview"; }
     Super+Z { spawn "pulsecontrol"; }
-    Super+W { spawn "sh" "-c" "pkill rofi || ~/Scripts/WifiMenu.sh"; }
-    Super+Q { spawn "sh" "-c" "pkill rofi || ~/Scripts/BluetoothMenu.sh"; }
+    Super+W { spawn "sh" "-c" "pkill rofi || rofi -config '~/.config/rofi/menus.rasi' -show wifi -modi wifi:iwdrofimenu"; }
+    Super+Q { spawn "sh" "-c" "pkill rofi || rofi-bluetooth -config '~/.config/rofi/menus.rasi'"; }
     Mod+X { spawn "vesktop"; }
 	
     XF86AudioRaiseVolume allow-when-locked=true { spawn "swayosd-client" "--output-volume" "raise"; }

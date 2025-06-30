@@ -35,7 +35,7 @@
   font-size: 20px;
 }
 
-.workspaces .item.focused  {
+.workspaces .item.visible  {
   padding: 0 20 0 20;
   margin: 6px;
   border-radius: 15px;
@@ -63,7 +63,10 @@
   padding: 5px;
 }
 
-.tray, .network_manager, . {
+.tray {
   padding: 0 10 0 10;
 }
 
+.notifications .count {
+  padding: 0 10 7 0
+}
