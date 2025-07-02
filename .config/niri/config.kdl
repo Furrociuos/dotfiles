@@ -41,6 +41,7 @@ input {
     }
     
     focus-follows-mouse max-scroll-amount="0%"
+    mod-key "Alt"
 }
 
 // You can configure outputs by their name, which you can find
@@ -113,7 +114,8 @@ spawn-at-startup "udiskie"
 spawn-at-startup "swayosd-server"
 spawn-at-startup "wl-paste" "--type" "text" "--watch" "cliphist" "store"
 spawn-at-startup "wl-paste" "--type" "image" "--watch" "cliphist" "store"
-spawn-at-startup "~/AppImages/caprine.appimage"
+spawn-at-startup "wl-clip-persist" "--clipboard" "regular"
+spawn-at-startup "~/AppImages/caprine_2_60_3.appimage"
 spawn-at-startup "/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1"
 spawn-at-startup "~/Scripts/Eww.sh"
 
@@ -242,32 +244,31 @@ binds {
     Mod+Shift+Slash { show-hotkey-overlay; }
 
     // Suggested binds for running programs: terminal, app launcher, screen locker.
-    Mod+Return { spawn "ghostty"; }
+    Super+Return { spawn "ghostty"; }
     Super+P { spawn "~/.config/rofi/powermenu/type-1/powermenu.sh"; }
-  	Super+B { spawn "brave" "-enable-features=TouchpadOverscrollHistoryNavigation"; }
+  	Super+B { spawn "brave"; }
 	  Alt+Space { spawn "sh" "-c" "pkill rofi || rofi -show drun"; }
     Super+Space {spawn "sh" "-c" "pkill rofi || rofi -show run"; }
 	  XF86Presentation { spawn "~/Scripts/BigPicture.sh"; }
-    Alt+XF86Presentation { spawn "remoteplaywhatever"; }
+	  Scroll_Lock { spawn "~/Scripts/BigPicture.sh"; }
 	  Super+E { spawn "nautilus"; }
     Super+N { spawn "sh" "-c" "curd -rofi -image-preview"; }
-    Super+Z { spawn "pulsecontrol"; }
+    Super+Z { spawn "pavucotrol"; }
     Super+W { spawn "sh" "-c" "pkill rofi || rofi -config '~/.config/rofi/menus.rasi' -show wifi -modi wifi:iwdrofimenu"; }
     Super+Q { spawn "sh" "-c" "pkill rofi || rofi-bluetooth -config '~/.config/rofi/menus.rasi'"; }
-    Mod+X { spawn "vesktop"; }
+    Super+C { spawn "vesktop"; }
 	
     XF86AudioRaiseVolume allow-when-locked=true { spawn "swayosd-client" "--output-volume" "raise"; }
     XF86AudioLowerVolume allow-when-locked=true { spawn "swayosd-client" "--output-volume" "lower" ; }
     XF86AudioMute        allow-when-locked=true { spawn "swayosd-client" "--output-volume" "mute-toggle"; }
-    Super+M     allow-when-locked=true { spawn "swayosd-client" "--input-volume" "mute-toggle"; }
+    Mod+M     allow-when-locked=true { spawn "swayosd-client" "--input-volume" "mute-toggle"; }
     Mod+P allow-when-locked=true { spawn "playerctl" "play-pause"; }
 
     XF86MonBrightnessUp allow-when-locked=true { spawn "swayosd-client" "--brightness" "raise"; }
     XF86MonBrightnessDown allow-when-locked=true { spawn "swayosd-client" "--brightness" "lower"; }
 
     Alt+W { close-window; }
-    Alt+F4 { close-window; }
-    Mod+Tab { toggle-overview; }
+    Super+Tab { toggle-overview; }
 
     Mod+H     { focus-column-left; }
     Mod+L     { focus-column-right; }
@@ -298,22 +299,13 @@ binds {
     Mod+Shift+Ctrl+K     { move-column-to-monitor-up; }
     Mod+Shift+Ctrl+L     { move-column-to-monitor-right; }
 
-
-    Mod+Page_Down      { focus-workspace-down; }
-    Mod+Page_Up        { focus-workspace-up; }
-    Mod+Ctrl+Page_Down { move-column-to-workspace-down; }
-    Mod+Ctrl+Page_Up   { move-column-to-workspace-up; }
-
-
-    Mod+Shift+Page_Down { move-workspace-down; }
-    Mod+Shift+Page_Up   { move-workspace-up; }
     Mod+Shift+U         { move-workspace-down; }
     Mod+Shift+I         { move-workspace-up; }
 
     Alt+Tab { focus-monitor-next; }
     
-    Ctrl+Mod+WheelScrollDown      cooldown-ms=150 { focus-workspace-down; }
-    Ctrl+Mod+WheelScrollUp        cooldown-ms=150 { focus-workspace-up; }
+    Super+WheelScrollDown      cooldown-ms=150 { focus-workspace-down; }
+    Super+WheelScrollUp        cooldown-ms=150 { focus-workspace-up; }
     Mod+Shift+WheelScrollDown cooldown-ms=150 { move-column-to-workspace-down; }
     Mod+Shift+WheelScrollUp   cooldown-ms=150 { move-column-to-workspace-up; }
 
@@ -380,11 +372,9 @@ binds {
 
     Mod+Shift+P { power-off-monitors; }
 
-  	Mod+Shift+R { spawn "pkill" "-SIGUSR2" "waybar" ; }
-
     Mod+F1 { set-dynamic-cast-window; }
     Mod+F2 { set-dynamic-cast-monitor; }
-    mod+F3 { clear-dynamic-cast-target; }
+    Mod+F3 { clear-dynamic-cast-target; }
 }
 	environment {
       XDG_CURRENT_DESKTOP "niri"
@@ -424,11 +414,6 @@ gestures {
 overview {
   zoom 0.65
   backdrop-color "#222436"
-}
-
-layer-rule {
-    match namespace="^overview-bar$"
-    place-within-backdrop true
 }
 
 prefer-no-csd

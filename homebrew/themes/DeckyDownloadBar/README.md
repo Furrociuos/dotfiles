@@ -1,1 +1,0 @@
-This theme fix the overflow of the download bar

@@ -1,1 +1,0 @@
-This Theme enable you to theme the battery color

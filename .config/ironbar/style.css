@@ -10,7 +10,7 @@
 
 #bar #start, #bar #center, #bar #end {
   background: #2A2C3D;
-  padding: 0 6 0 6;
+  padding: 0px 6px 0px 6px;
   margin: 4px;
   border-radius: 10px
 }
@@ -25,18 +25,18 @@
 }
 
 .workspaces {
-  padding: 0 5 0 5;
+  padding: 0px 5px 0px 5px;
 }
 
 .workspaces .item {
-  padding: 4 8 4 8;
+  padding: 4px 8px 4px 8px;
   margin: 1px;
   color: white;
   font-size: 20px;
 }
 
-.workspaces .item.visible  {
-  padding: 0 20 0 20;
+.workspaces .item.focused  {
+  padding: 0px 20px 0px 20px;
   margin: 6px;
   border-radius: 15px;
   background-color: #7aa3f7;
@@ -46,15 +46,15 @@
 
 .clock {
   font-weight: bold;
-  padding: 0 10 0 10
+  padding: 0px 10px 0px 10px
 }
 
 .focused {
-  padding: 0 0 0 10
+  padding: 0px 10px 0px 10px
 }
 
 .popup-clock .calendar-clock {
-  padding: 15 25 15 25;
+  padding: 15px 25px 15px 25px;
   font-size: 24px;
 }
 
@@ -64,9 +64,9 @@
 }
 
 .tray {
-  padding: 0 10 0 10;
+  padding: 0px 10px 0px 10px;
 }
 
 .notifications .count {
-  padding: 0 10 7 0
+  padding: 0px 7px 7px 0px
 }
