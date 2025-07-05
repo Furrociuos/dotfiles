@@ -21,14 +21,14 @@
       "mpris",
     	"clock",
       "custom/separator",
-      "niri/window",
+      "hyprland/window",
 		]
 	},
 
   "group/center": {
     "orientation": "horizontal",
     "modules": [
-      "niri/workspaces",
+      "hyprland/workspaces",
     ]
   },
 
@@ -44,13 +44,13 @@
 		]
 	},
 
-     "niri/workspaces": {
+     "hyprland/workspaces": {
          "disable-scroll": true,
          "all-outputs": false,
-         "format": "{index}",
+         "format": "{name}",
     },
 
-    "niri/window": {
+    "hyprland/window": {
       "format": "{title}",
       "max-length": 50,
     },
@@ -66,7 +66,7 @@
         "tooltip-format": "{essid} via {gwaddr} ",
         "format-linked": "{ifname} (No IP) ",
         "format-disconnected": "Offline ⚠",
-        "on-click": "iwgtk",
+        "on-click": "pkill rofi || rofi -config '~/.config/rofi/menus.rasi' -show wifi -modi wifi:iwdrofimenu",
         "interval": 10
     },
 

@@ -1,5 +1,3 @@
-@import '/home/furrociuos/.cache/wal/colors-waybar.css';
-
 * {
     border: none;
     border-radius: 0;
@@ -60,7 +58,7 @@ tooltip label {
 }
 
 #workspaces button.active {
-	padding: 0px 10px 0px 10px;
+	padding: 0px 20px 0px 20px;
 	margin: 6px;
 	border-radius: 15px;
 	background: #7aa3f7;

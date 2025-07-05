@@ -28,7 +28,8 @@
       ],
         "center": [
         {
-          "type": "workspaces"
+          "type": "workspaces",
+          "hidden": ["special"]
         }
       ],
         "end": [

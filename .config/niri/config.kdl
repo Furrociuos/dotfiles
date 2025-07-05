@@ -105,19 +105,16 @@ layout {
 
 // STARTUP
 
-spawn-at-startup "sh" "-c" "env ELECTRON_OZONE_PLATFORM_HINT=wayland vesktop --start-minimized"
-spawn-at-startup "sh" "-c" "fdm --hidden"
 spawn-at-startup "waypaper" "--restore"
-spawn-at-startup "syncthing"
-spawn-at-startup "ironbar"
+spawn-at-startup "waybar"
 spawn-at-startup "udiskie"
 spawn-at-startup "swayosd-server"
 spawn-at-startup "wl-paste" "--type" "text" "--watch" "cliphist" "store"
 spawn-at-startup "wl-paste" "--type" "image" "--watch" "cliphist" "store"
 spawn-at-startup "wl-clip-persist" "--clipboard" "regular"
-spawn-at-startup "~/AppImages/caprine_2_60_3.appimage"
 spawn-at-startup "/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1"
 spawn-at-startup "~/Scripts/Eww.sh"
+spawn-at-startup "/usr/lib/pam_kwallet_init"
 
 	
 // You can change the path where screenshots are saved.
@@ -250,7 +247,7 @@ binds {
 	  Alt+Space { spawn "sh" "-c" "pkill rofi || rofi -show drun"; }
     Super+Space {spawn "sh" "-c" "pkill rofi || rofi -show run"; }
 	  XF86Presentation { spawn "~/Scripts/BigPicture.sh"; }
-	  Scroll_Lock { spawn "~/Scripts/BigPicture.sh"; }
+	  Pause { spawn "~/Scripts/BigPicture.sh"; }
 	  Super+E { spawn "nautilus"; }
     Super+N { spawn "sh" "-c" "curd -rofi -image-preview"; }
     Super+Z { spawn "pavucotrol"; }
