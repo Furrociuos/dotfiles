@@ -1,0 +1,33 @@
+{
+  "$schema": "./schema.json",
+  "widgets": [
+    {
+        "namespace": "workspaces",
+        "layer": "top",
+        "edge": "left",
+        "position": "left",
+        "monitor": ["eDP-1", "HDMI-A-2"],
+        "preview-size": "15%",
+        "animation-curve": "ease-cubic",
+
+        "type": "workspace",
+            "thickness": 20,
+            "length": "35%",
+            "active-increase": 0.5,
+            "focus-color": "#7aa3f7",
+            "default-color": "#2a2c3daa",
+            "hover-color": "#ffffffaa",
+            "active-color": "#2a2c3d",
+            "workspace-animation-curve": "ease-cubic",
+            "gap": 5,
+            "pop-duration": 1000,
+            "workspace-transition-duration": 300,
+            "focused-only": true,
+            "border-radius": 5,
+            "preset": {
+                "type": "niri",
+                "filter-empty": true
+            }
+    }
+  ],
+}

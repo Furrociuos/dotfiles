@@ -20,15 +20,14 @@
 		"modules": [
       "mpris",
     	"clock",
-      "custom/separator",
-      "hyprland/window",
+      "custom/separator"
 		]
 	},
 
   "group/center": {
     "orientation": "horizontal",
     "modules": [
-      "hyprland/workspaces",
+      "niri/window"
     ]
   },
 
@@ -44,15 +43,10 @@
 		]
 	},
 
-     "hyprland/workspaces": {
+     "niri/workspaces": {
          "disable-scroll": true,
          "all-outputs": false,
-         "format": "{name}",
-    },
-
-    "hyprland/window": {
-      "format": "{title}",
-      "max-length": 50,
+         "format": "{index}",
     },
 
     "custom/separator": {
@@ -61,11 +55,12 @@
       },
 
     "network": {
-        "format-wifi": "{signalStrength}% ",
+        "format-wifi": "{essid} {icon}",
         "format-ethernet": "Wired ",
         "tooltip-format": "{essid} via {gwaddr} ",
         "format-linked": "{ifname} (No IP) ",
         "format-disconnected": "Offline ⚠",
+        "format-icons": ["󰤟", "󰤢", "󰤥", "󰤨"],
         "on-click": "pkill rofi || rofi -config '~/.config/rofi/menus.rasi' -show wifi -modi wifi:iwdrofimenu",
         "interval": 10
     },
@@ -75,7 +70,7 @@
       "format-off": "Off 󰂲",
     	"format-disabled": "Off 󰂲",
     	"format-connected": "On 󰂱",
-    	"on-click": "blueberry"
+    	"on-click": "pkill rofi || rofi-bluetooth -config '~/.config/rofi/menus.rasi'"
     },
     
     "pulseaudio": {
@@ -137,8 +132,7 @@
 		"drawer": {
 			"transition-duration": 500,
 			"children-class": "not-primary",
-			"transition-left-to-right": false,
-      "click-to-reveal": true
+			"transition-left-to-right": false
 		},
 		  "modules": [
        "custom/arrow",
@@ -155,6 +149,21 @@
         "format": "",
         "tooltip": false
       },
+
+  "group/textstuff": {
+      "orientation": "vertical",
+      "modules": [
+          "mpris",
+          "niri/window",
+       ] 
+    },
+
+    "niri/window": {
+      "format": "{title}",
+      "max-length": 40,
+      "icon": true,
+      "icon-size": 24
+    },
 
   "mpris": {
     "format": "{player_icon}",

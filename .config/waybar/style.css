@@ -1,7 +1,7 @@
 * {
     border: none;
     border-radius: 0;
-    font-family: CascadiaCode, SymbolsNerdFont, FontAwesome6Free;
+    font-family: CascadiaCode, JetBrainsMono Nerd Font Propo, FontAwesome6Free;
     font-size: 16px;
     min-height: 0;
 }
@@ -20,6 +20,7 @@ window#waybar {
     margin-bottom: 5px;
     margin-top: 5px;
     border-radius: 15px;
+    font-size: 2px
 }
 
 tooltip {
@@ -47,7 +48,7 @@ tooltip label {
 }
 
 #workspaces button { 
-	padding: 4px;
+	padding: 4px 0px 4px 0px;
     margin: 1px;
     color: white;
     font-size: 20px;
